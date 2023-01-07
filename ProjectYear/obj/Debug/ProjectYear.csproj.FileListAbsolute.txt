@@ -1,0 +1,11 @@
+C:\Users\anton\source\repos\ProjectYear\ProjectYear\bin\Debug\ProjectYear.exe.config
+C:\Users\anton\source\repos\ProjectYear\ProjectYear\bin\Debug\ProjectYear.exe
+C:\Users\anton\source\repos\ProjectYear\ProjectYear\bin\Debug\ProjectYear.pdb
+C:\Users\anton\source\repos\ProjectYear\ProjectYear\obj\Debug\ProjectYear.csproj.AssemblyReference.cache
+C:\Users\anton\source\repos\ProjectYear\ProjectYear\obj\Debug\ProjectYear.Form1.resources
+C:\Users\anton\source\repos\ProjectYear\ProjectYear\obj\Debug\ProjectYear.Properties.Resources.resources
+C:\Users\anton\source\repos\ProjectYear\ProjectYear\obj\Debug\ProjectYear.csproj.GenerateResource.cache
+C:\Users\anton\source\repos\ProjectYear\ProjectYear\obj\Debug\ProjectYear.csproj.CoreCompileInputs.cache
+C:\Users\anton\source\repos\ProjectYear\ProjectYear\obj\Debug\ProjectYear.csproj.CopyComplete
+C:\Users\anton\source\repos\ProjectYear\ProjectYear\obj\Debug\ProjectYear.exe
+C:\Users\anton\source\repos\ProjectYear\ProjectYear\obj\Debug\ProjectYear.pdb
