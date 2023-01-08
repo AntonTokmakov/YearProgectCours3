@@ -33,35 +33,35 @@ namespace ProjectYear
             this.gunaGradient2Panel1 = new Guna.UI.WinForms.GunaGradient2Panel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaGradient2Panel2 = new Guna.UI.WinForms.GunaGradient2Panel();
-            this.buttonWrite = new Guna.UI.WinForms.GunaAdvenceButton();
             this.buttonSaturday = new Guna.UI.WinForms.GunaAdvenceButton();
             this.buttonFirday = new Guna.UI.WinForms.GunaAdvenceButton();
             this.buttonThursday = new Guna.UI.WinForms.GunaAdvenceButton();
             this.buttonWednesday = new Guna.UI.WinForms.GunaAdvenceButton();
             this.buttonTuesday = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.buttonMondey = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.buttonMonday = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.editChet = new System.Windows.Forms.ComboBox();
+            this.editGroup = new System.Windows.Forms.ComboBox();
+            this.editOffise2 = new System.Windows.Forms.ComboBox();
+            this.editTicher2 = new System.Windows.Forms.ComboBox();
+            this.editOffise5 = new System.Windows.Forms.ComboBox();
+            this.editTicher5 = new System.Windows.Forms.ComboBox();
+            this.editOffise4 = new System.Windows.Forms.ComboBox();
+            this.editTicher4 = new System.Windows.Forms.ComboBox();
+            this.editOffise3 = new System.Windows.Forms.ComboBox();
+            this.editTicher3 = new System.Windows.Forms.ComboBox();
+            this.editOffise1 = new System.Windows.Forms.ComboBox();
+            this.editTicher1 = new System.Windows.Forms.ComboBox();
+            this.buttonWrite = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaSeparator1 = new Guna.UI.WinForms.GunaSeparator();
-            this.gunaComboBox12 = new Guna.UI.WinForms.GunaComboBox();
-            this.gunaComboBox11 = new Guna.UI.WinForms.GunaComboBox();
             this.label71 = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
-            this.gunaComboBox9 = new Guna.UI.WinForms.GunaComboBox();
-            this.gunaComboBox10 = new Guna.UI.WinForms.GunaComboBox();
             this.editLesson5 = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaComboBox7 = new Guna.UI.WinForms.GunaComboBox();
-            this.gunaComboBox8 = new Guna.UI.WinForms.GunaComboBox();
             this.editLesson4 = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaComboBox5 = new Guna.UI.WinForms.GunaComboBox();
-            this.gunaComboBox6 = new Guna.UI.WinForms.GunaComboBox();
             this.editLesson3 = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaComboBox3 = new Guna.UI.WinForms.GunaComboBox();
-            this.gunaComboBox4 = new Guna.UI.WinForms.GunaComboBox();
             this.editLesson2 = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaComboBox2 = new Guna.UI.WinForms.GunaComboBox();
-            this.gunaComboBox1 = new Guna.UI.WinForms.GunaComboBox();
             this.editLesson1 = new Guna.UI.WinForms.GunaTextBox();
             this.panelMonday = new Guna.UI.WinForms.GunaGradient2Panel();
             this.viewMonday5 = new System.Windows.Forms.Label();
@@ -96,7 +96,7 @@ namespace ProjectYear
             this.label26 = new System.Windows.Forms.Label();
             this.viewWednesday3 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.viewWendnesday2 = new System.Windows.Forms.Label();
+            this.viewWednesday2 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.viewWednesday1 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
@@ -113,7 +113,7 @@ namespace ProjectYear
             this.viewThursday1 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
-            this.gunaGradient2Panel6 = new Guna.UI.WinForms.GunaGradient2Panel();
+            this.panelFirsday = new Guna.UI.WinForms.GunaGradient2Panel();
             this.viewFirsday5 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.viewFirsday4 = new System.Windows.Forms.Label();
@@ -137,6 +137,7 @@ namespace ProjectYear
             this.viewSaturday1 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
+            this.separator = new Guna.UI.WinForms.GunaSeparator();
             this.gunaGradient2Panel1.SuspendLayout();
             this.gunaGradient2Panel2.SuspendLayout();
             this.panelMonday.SuspendLayout();
@@ -144,7 +145,7 @@ namespace ProjectYear
             this.panelTuesday.SuspendLayout();
             this.panelWendnesday.SuspendLayout();
             this.panelThursday.SuspendLayout();
-            this.gunaGradient2Panel6.SuspendLayout();
+            this.panelFirsday.SuspendLayout();
             this.panelSaturday.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -177,35 +178,36 @@ namespace ProjectYear
             this.gunaGradient2Panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaGradient2Panel2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGradient2Panel2.Controls.Add(this.buttonWrite);
+            this.gunaGradient2Panel2.Controls.Add(this.separator);
             this.gunaGradient2Panel2.Controls.Add(this.buttonSaturday);
             this.gunaGradient2Panel2.Controls.Add(this.buttonFirday);
             this.gunaGradient2Panel2.Controls.Add(this.buttonThursday);
             this.gunaGradient2Panel2.Controls.Add(this.buttonWednesday);
             this.gunaGradient2Panel2.Controls.Add(this.buttonTuesday);
-            this.gunaGradient2Panel2.Controls.Add(this.buttonMondey);
+            this.gunaGradient2Panel2.Controls.Add(this.buttonMonday);
+            this.gunaGradient2Panel2.Controls.Add(this.editChet);
+            this.gunaGradient2Panel2.Controls.Add(this.editGroup);
+            this.gunaGradient2Panel2.Controls.Add(this.editOffise2);
+            this.gunaGradient2Panel2.Controls.Add(this.editTicher2);
+            this.gunaGradient2Panel2.Controls.Add(this.editOffise5);
+            this.gunaGradient2Panel2.Controls.Add(this.editTicher5);
+            this.gunaGradient2Panel2.Controls.Add(this.editOffise4);
+            this.gunaGradient2Panel2.Controls.Add(this.editTicher4);
+            this.gunaGradient2Panel2.Controls.Add(this.editOffise3);
+            this.gunaGradient2Panel2.Controls.Add(this.editTicher3);
+            this.gunaGradient2Panel2.Controls.Add(this.editOffise1);
+            this.gunaGradient2Panel2.Controls.Add(this.editTicher1);
+            this.gunaGradient2Panel2.Controls.Add(this.buttonWrite);
             this.gunaGradient2Panel2.Controls.Add(this.gunaSeparator1);
-            this.gunaGradient2Panel2.Controls.Add(this.gunaComboBox12);
-            this.gunaGradient2Panel2.Controls.Add(this.gunaComboBox11);
             this.gunaGradient2Panel2.Controls.Add(this.label71);
             this.gunaGradient2Panel2.Controls.Add(this.label70);
             this.gunaGradient2Panel2.Controls.Add(this.label69);
             this.gunaGradient2Panel2.Controls.Add(this.label68);
             this.gunaGradient2Panel2.Controls.Add(this.label67);
-            this.gunaGradient2Panel2.Controls.Add(this.gunaComboBox9);
-            this.gunaGradient2Panel2.Controls.Add(this.gunaComboBox10);
             this.gunaGradient2Panel2.Controls.Add(this.editLesson5);
-            this.gunaGradient2Panel2.Controls.Add(this.gunaComboBox7);
-            this.gunaGradient2Panel2.Controls.Add(this.gunaComboBox8);
             this.gunaGradient2Panel2.Controls.Add(this.editLesson4);
-            this.gunaGradient2Panel2.Controls.Add(this.gunaComboBox5);
-            this.gunaGradient2Panel2.Controls.Add(this.gunaComboBox6);
             this.gunaGradient2Panel2.Controls.Add(this.editLesson3);
-            this.gunaGradient2Panel2.Controls.Add(this.gunaComboBox3);
-            this.gunaGradient2Panel2.Controls.Add(this.gunaComboBox4);
             this.gunaGradient2Panel2.Controls.Add(this.editLesson2);
-            this.gunaGradient2Panel2.Controls.Add(this.gunaComboBox2);
-            this.gunaGradient2Panel2.Controls.Add(this.gunaComboBox1);
             this.gunaGradient2Panel2.Controls.Add(this.editLesson1);
             this.gunaGradient2Panel2.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(113)))), ((int)(((byte)(213)))));
             this.gunaGradient2Panel2.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(113)))), ((int)(((byte)(213)))));
@@ -213,8 +215,337 @@ namespace ProjectYear
             this.gunaGradient2Panel2.Location = new System.Drawing.Point(599, 81);
             this.gunaGradient2Panel2.Name = "gunaGradient2Panel2";
             this.gunaGradient2Panel2.Radius = 5;
-            this.gunaGradient2Panel2.Size = new System.Drawing.Size(425, 692);
+            this.gunaGradient2Panel2.Size = new System.Drawing.Size(425, 691);
             this.gunaGradient2Panel2.TabIndex = 1;
+            // 
+            // buttonSaturday
+            // 
+            this.buttonSaturday.Animated = true;
+            this.buttonSaturday.AnimationHoverSpeed = 0.07F;
+            this.buttonSaturday.AnimationSpeed = 0.03F;
+            this.buttonSaturday.BackColor = System.Drawing.Color.Transparent;
+            this.buttonSaturday.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
+            this.buttonSaturday.BorderColor = System.Drawing.Color.Black;
+            this.buttonSaturday.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.buttonSaturday.CheckedBorderColor = System.Drawing.Color.Black;
+            this.buttonSaturday.CheckedForeColor = System.Drawing.Color.White;
+            this.buttonSaturday.CheckedImage = null;
+            this.buttonSaturday.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.buttonSaturday.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.buttonSaturday.FocusedColor = System.Drawing.Color.Empty;
+            this.buttonSaturday.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonSaturday.ForeColor = System.Drawing.Color.Black;
+            this.buttonSaturday.Image = null;
+            this.buttonSaturday.ImageSize = new System.Drawing.Size(20, 20);
+            this.buttonSaturday.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.buttonSaturday.Location = new System.Drawing.Point(352, 7);
+            this.buttonSaturday.Name = "buttonSaturday";
+            this.buttonSaturday.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.buttonSaturday.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.buttonSaturday.OnHoverForeColor = System.Drawing.Color.White;
+            this.buttonSaturday.OnHoverImage = null;
+            this.buttonSaturday.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.buttonSaturday.OnPressedColor = System.Drawing.Color.Black;
+            this.buttonSaturday.Radius = 5;
+            this.buttonSaturday.Size = new System.Drawing.Size(52, 47);
+            this.buttonSaturday.TabIndex = 80;
+            this.buttonSaturday.Text = "СБ";
+            this.buttonSaturday.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.buttonSaturday.Click += new System.EventHandler(this.buttonSaturday_Click);
+            // 
+            // buttonFirday
+            // 
+            this.buttonFirday.Animated = true;
+            this.buttonFirday.AnimationHoverSpeed = 0.07F;
+            this.buttonFirday.AnimationSpeed = 0.03F;
+            this.buttonFirday.BackColor = System.Drawing.Color.Transparent;
+            this.buttonFirday.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
+            this.buttonFirday.BorderColor = System.Drawing.Color.Black;
+            this.buttonFirday.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.buttonFirday.CheckedBorderColor = System.Drawing.Color.Black;
+            this.buttonFirday.CheckedForeColor = System.Drawing.Color.White;
+            this.buttonFirday.CheckedImage = null;
+            this.buttonFirday.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.buttonFirday.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.buttonFirday.FocusedColor = System.Drawing.Color.Empty;
+            this.buttonFirday.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonFirday.ForeColor = System.Drawing.Color.Black;
+            this.buttonFirday.Image = null;
+            this.buttonFirday.ImageSize = new System.Drawing.Size(20, 20);
+            this.buttonFirday.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.buttonFirday.Location = new System.Drawing.Point(287, 7);
+            this.buttonFirday.Name = "buttonFirday";
+            this.buttonFirday.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.buttonFirday.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.buttonFirday.OnHoverForeColor = System.Drawing.Color.White;
+            this.buttonFirday.OnHoverImage = null;
+            this.buttonFirday.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.buttonFirday.OnPressedColor = System.Drawing.Color.Black;
+            this.buttonFirday.Radius = 5;
+            this.buttonFirday.Size = new System.Drawing.Size(52, 47);
+            this.buttonFirday.TabIndex = 79;
+            this.buttonFirday.Text = "ПТ";
+            this.buttonFirday.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.buttonFirday.Click += new System.EventHandler(this.buttonFirday_Click);
+            // 
+            // buttonThursday
+            // 
+            this.buttonThursday.Animated = true;
+            this.buttonThursday.AnimationHoverSpeed = 0.07F;
+            this.buttonThursday.AnimationSpeed = 0.03F;
+            this.buttonThursday.BackColor = System.Drawing.Color.Transparent;
+            this.buttonThursday.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
+            this.buttonThursday.BorderColor = System.Drawing.Color.Black;
+            this.buttonThursday.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.buttonThursday.CheckedBorderColor = System.Drawing.Color.Black;
+            this.buttonThursday.CheckedForeColor = System.Drawing.Color.White;
+            this.buttonThursday.CheckedImage = null;
+            this.buttonThursday.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.buttonThursday.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.buttonThursday.FocusedColor = System.Drawing.Color.Empty;
+            this.buttonThursday.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonThursday.ForeColor = System.Drawing.Color.Black;
+            this.buttonThursday.Image = null;
+            this.buttonThursday.ImageSize = new System.Drawing.Size(20, 20);
+            this.buttonThursday.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.buttonThursday.Location = new System.Drawing.Point(219, 7);
+            this.buttonThursday.Name = "buttonThursday";
+            this.buttonThursday.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.buttonThursday.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.buttonThursday.OnHoverForeColor = System.Drawing.Color.White;
+            this.buttonThursday.OnHoverImage = null;
+            this.buttonThursday.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.buttonThursday.OnPressedColor = System.Drawing.Color.Black;
+            this.buttonThursday.Radius = 5;
+            this.buttonThursday.Size = new System.Drawing.Size(52, 47);
+            this.buttonThursday.TabIndex = 78;
+            this.buttonThursday.Text = "ЧТ";
+            this.buttonThursday.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.buttonThursday.Click += new System.EventHandler(this.buttonThursday_Click);
+            // 
+            // buttonWednesday
+            // 
+            this.buttonWednesday.Animated = true;
+            this.buttonWednesday.AnimationHoverSpeed = 0.07F;
+            this.buttonWednesday.AnimationSpeed = 0.03F;
+            this.buttonWednesday.BackColor = System.Drawing.Color.Transparent;
+            this.buttonWednesday.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
+            this.buttonWednesday.BorderColor = System.Drawing.Color.Black;
+            this.buttonWednesday.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.buttonWednesday.CheckedBorderColor = System.Drawing.Color.Black;
+            this.buttonWednesday.CheckedForeColor = System.Drawing.Color.White;
+            this.buttonWednesday.CheckedImage = null;
+            this.buttonWednesday.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.buttonWednesday.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.buttonWednesday.FocusedColor = System.Drawing.Color.Empty;
+            this.buttonWednesday.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonWednesday.ForeColor = System.Drawing.Color.Black;
+            this.buttonWednesday.Image = null;
+            this.buttonWednesday.ImageSize = new System.Drawing.Size(20, 20);
+            this.buttonWednesday.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.buttonWednesday.Location = new System.Drawing.Point(152, 7);
+            this.buttonWednesday.Name = "buttonWednesday";
+            this.buttonWednesday.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.buttonWednesday.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.buttonWednesday.OnHoverForeColor = System.Drawing.Color.White;
+            this.buttonWednesday.OnHoverImage = null;
+            this.buttonWednesday.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.buttonWednesday.OnPressedColor = System.Drawing.Color.Black;
+            this.buttonWednesday.Radius = 5;
+            this.buttonWednesday.Size = new System.Drawing.Size(52, 47);
+            this.buttonWednesday.TabIndex = 77;
+            this.buttonWednesday.Text = "СР";
+            this.buttonWednesday.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.buttonWednesday.Click += new System.EventHandler(this.buttonWednesday_Click);
+            // 
+            // buttonTuesday
+            // 
+            this.buttonTuesday.Animated = true;
+            this.buttonTuesday.AnimationHoverSpeed = 0.07F;
+            this.buttonTuesday.AnimationSpeed = 0.03F;
+            this.buttonTuesday.BackColor = System.Drawing.Color.Transparent;
+            this.buttonTuesday.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
+            this.buttonTuesday.BorderColor = System.Drawing.Color.Black;
+            this.buttonTuesday.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.buttonTuesday.CheckedBorderColor = System.Drawing.Color.Black;
+            this.buttonTuesday.CheckedForeColor = System.Drawing.Color.White;
+            this.buttonTuesday.CheckedImage = null;
+            this.buttonTuesday.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.buttonTuesday.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.buttonTuesday.FocusedColor = System.Drawing.Color.Empty;
+            this.buttonTuesday.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonTuesday.ForeColor = System.Drawing.Color.Black;
+            this.buttonTuesday.Image = null;
+            this.buttonTuesday.ImageSize = new System.Drawing.Size(20, 20);
+            this.buttonTuesday.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.buttonTuesday.Location = new System.Drawing.Point(86, 7);
+            this.buttonTuesday.Name = "buttonTuesday";
+            this.buttonTuesday.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.buttonTuesday.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.buttonTuesday.OnHoverForeColor = System.Drawing.Color.White;
+            this.buttonTuesday.OnHoverImage = null;
+            this.buttonTuesday.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.buttonTuesday.OnPressedColor = System.Drawing.Color.Black;
+            this.buttonTuesday.Radius = 5;
+            this.buttonTuesday.Size = new System.Drawing.Size(52, 47);
+            this.buttonTuesday.TabIndex = 76;
+            this.buttonTuesday.Text = "ВТ";
+            this.buttonTuesday.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.buttonTuesday.Click += new System.EventHandler(this.buttonTuesday_Click);
+            // 
+            // buttonMonday
+            // 
+            this.buttonMonday.Animated = true;
+            this.buttonMonday.AnimationHoverSpeed = 0.07F;
+            this.buttonMonday.AnimationSpeed = 0.03F;
+            this.buttonMonday.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMonday.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
+            this.buttonMonday.BorderColor = System.Drawing.Color.Black;
+            this.buttonMonday.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.buttonMonday.CheckedBorderColor = System.Drawing.Color.Black;
+            this.buttonMonday.CheckedForeColor = System.Drawing.Color.White;
+            this.buttonMonday.CheckedImage = null;
+            this.buttonMonday.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.buttonMonday.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.buttonMonday.FocusedColor = System.Drawing.Color.Empty;
+            this.buttonMonday.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonMonday.ForeColor = System.Drawing.Color.Black;
+            this.buttonMonday.Image = null;
+            this.buttonMonday.ImageSize = new System.Drawing.Size(20, 20);
+            this.buttonMonday.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.buttonMonday.Location = new System.Drawing.Point(21, 7);
+            this.buttonMonday.Name = "buttonMonday";
+            this.buttonMonday.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.buttonMonday.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.buttonMonday.OnHoverForeColor = System.Drawing.Color.White;
+            this.buttonMonday.OnHoverImage = null;
+            this.buttonMonday.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.buttonMonday.OnPressedColor = System.Drawing.Color.Black;
+            this.buttonMonday.Radius = 5;
+            this.buttonMonday.Size = new System.Drawing.Size(52, 47);
+            this.buttonMonday.TabIndex = 75;
+            this.buttonMonday.Text = "ПН";
+            this.buttonMonday.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.buttonMonday.Click += new System.EventHandler(this.buttonMonday_Click);
+            // 
+            // editChet
+            // 
+            this.editChet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
+            this.editChet.FormattingEnabled = true;
+            this.editChet.Location = new System.Drawing.Point(226, 593);
+            this.editChet.Name = "editChet";
+            this.editChet.Size = new System.Drawing.Size(174, 21);
+            this.editChet.TabIndex = 74;
+            this.editChet.Text = "Преподаватель";
+            // 
+            // editGroup
+            // 
+            this.editGroup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
+            this.editGroup.FormattingEnabled = true;
+            this.editGroup.Location = new System.Drawing.Point(28, 593);
+            this.editGroup.Name = "editGroup";
+            this.editGroup.Size = new System.Drawing.Size(175, 21);
+            this.editGroup.TabIndex = 73;
+            this.editGroup.Text = "Преподаватель";
+            // 
+            // editOffise2
+            // 
+            this.editOffise2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
+            this.editOffise2.FormattingEnabled = true;
+            this.editOffise2.Location = new System.Drawing.Point(290, 240);
+            this.editOffise2.Name = "editOffise2";
+            this.editOffise2.Size = new System.Drawing.Size(107, 21);
+            this.editOffise2.TabIndex = 72;
+            // 
+            // editTicher2
+            // 
+            this.editTicher2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
+            this.editTicher2.FormattingEnabled = true;
+            this.editTicher2.Location = new System.Drawing.Point(28, 240);
+            this.editTicher2.Name = "editTicher2";
+            this.editTicher2.Size = new System.Drawing.Size(232, 21);
+            this.editTicher2.TabIndex = 71;
+            this.editTicher2.Text = "Преподаватель";
+            // 
+            // editOffise5
+            // 
+            this.editOffise5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
+            this.editOffise5.FormattingEnabled = true;
+            this.editOffise5.Location = new System.Drawing.Point(291, 534);
+            this.editOffise5.Name = "editOffise5";
+            this.editOffise5.Size = new System.Drawing.Size(107, 21);
+            this.editOffise5.TabIndex = 70;
+            // 
+            // editTicher5
+            // 
+            this.editTicher5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
+            this.editTicher5.FormattingEnabled = true;
+            this.editTicher5.Location = new System.Drawing.Point(29, 534);
+            this.editTicher5.Name = "editTicher5";
+            this.editTicher5.Size = new System.Drawing.Size(232, 21);
+            this.editTicher5.TabIndex = 69;
+            this.editTicher5.Text = "Преподаватель";
+            // 
+            // editOffise4
+            // 
+            this.editOffise4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
+            this.editOffise4.FormattingEnabled = true;
+            this.editOffise4.Items.AddRange(new object[] {
+            "Привет",
+            "Пока",
+            "Как дела"});
+            this.editOffise4.Location = new System.Drawing.Point(290, 433);
+            this.editOffise4.Name = "editOffise4";
+            this.editOffise4.Size = new System.Drawing.Size(107, 21);
+            this.editOffise4.TabIndex = 68;
+            // 
+            // editTicher4
+            // 
+            this.editTicher4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
+            this.editTicher4.FormattingEnabled = true;
+            this.editTicher4.Location = new System.Drawing.Point(28, 433);
+            this.editTicher4.Name = "editTicher4";
+            this.editTicher4.Size = new System.Drawing.Size(232, 21);
+            this.editTicher4.TabIndex = 67;
+            this.editTicher4.Text = "Преподаватель";
+            // 
+            // editOffise3
+            // 
+            this.editOffise3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
+            this.editOffise3.FormattingEnabled = true;
+            this.editOffise3.Location = new System.Drawing.Point(291, 337);
+            this.editOffise3.Name = "editOffise3";
+            this.editOffise3.Size = new System.Drawing.Size(107, 21);
+            this.editOffise3.TabIndex = 66;
+            // 
+            // editTicher3
+            // 
+            this.editTicher3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
+            this.editTicher3.FormattingEnabled = true;
+            this.editTicher3.Location = new System.Drawing.Point(29, 337);
+            this.editTicher3.Name = "editTicher3";
+            this.editTicher3.Size = new System.Drawing.Size(232, 21);
+            this.editTicher3.TabIndex = 65;
+            this.editTicher3.Text = "Преподаватель";
+            // 
+            // editOffise1
+            // 
+            this.editOffise1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
+            this.editOffise1.FormattingEnabled = true;
+            this.editOffise1.Location = new System.Drawing.Point(291, 145);
+            this.editOffise1.Name = "editOffise1";
+            this.editOffise1.Size = new System.Drawing.Size(107, 21);
+            this.editOffise1.TabIndex = 64;
+            // 
+            // editTicher1
+            // 
+            this.editTicher1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
+            this.editTicher1.FormattingEnabled = true;
+            this.editTicher1.Location = new System.Drawing.Point(29, 145);
+            this.editTicher1.Name = "editTicher1";
+            this.editTicher1.Size = new System.Drawing.Size(232, 21);
+            this.editTicher1.TabIndex = 63;
+            this.editTicher1.Text = "Преподаватель";
             // 
             // buttonWrite
             // 
@@ -246,253 +577,17 @@ namespace ProjectYear
             this.buttonWrite.Size = new System.Drawing.Size(371, 41);
             this.buttonWrite.TabIndex = 62;
             this.buttonWrite.Text = "Записать";
+            this.buttonWrite.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.buttonWrite.Click += new System.EventHandler(this.buttonWrite_Click);
-            // 
-            // buttonSaturday
-            // 
-            this.buttonSaturday.Animated = true;
-            this.buttonSaturday.AnimationHoverSpeed = 0.07F;
-            this.buttonSaturday.AnimationSpeed = 0.03F;
-            this.buttonSaturday.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(208)))), ((int)(((byte)(115)))));
-            this.buttonSaturday.BorderColor = System.Drawing.Color.Black;
-            this.buttonSaturday.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.buttonSaturday.CheckedBorderColor = System.Drawing.Color.Black;
-            this.buttonSaturday.CheckedForeColor = System.Drawing.Color.White;
-            this.buttonSaturday.CheckedImage = null;
-            this.buttonSaturday.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.buttonSaturday.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonSaturday.FocusedColor = System.Drawing.Color.Empty;
-            this.buttonSaturday.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonSaturday.ForeColor = System.Drawing.Color.Black;
-            this.buttonSaturday.Image = null;
-            this.buttonSaturday.ImageSize = new System.Drawing.Size(20, 20);
-            this.buttonSaturday.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.buttonSaturday.Location = new System.Drawing.Point(363, 9);
-            this.buttonSaturday.Name = "buttonSaturday";
-            this.buttonSaturday.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(212)))), ((int)(((byte)(245)))));
-            this.buttonSaturday.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.buttonSaturday.OnHoverForeColor = System.Drawing.Color.White;
-            this.buttonSaturday.OnHoverImage = null;
-            this.buttonSaturday.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.buttonSaturday.OnPressedColor = System.Drawing.Color.Black;
-            this.buttonSaturday.Size = new System.Drawing.Size(46, 42);
-            this.buttonSaturday.TabIndex = 61;
-            this.buttonSaturday.Text = "СБ";
-            this.buttonSaturday.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // buttonFirday
-            // 
-            this.buttonFirday.Animated = true;
-            this.buttonFirday.AnimationHoverSpeed = 0.07F;
-            this.buttonFirday.AnimationSpeed = 0.03F;
-            this.buttonFirday.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(208)))), ((int)(((byte)(115)))));
-            this.buttonFirday.BorderColor = System.Drawing.Color.Black;
-            this.buttonFirday.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.buttonFirday.CheckedBorderColor = System.Drawing.Color.Black;
-            this.buttonFirday.CheckedForeColor = System.Drawing.Color.White;
-            this.buttonFirday.CheckedImage = null;
-            this.buttonFirday.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.buttonFirday.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonFirday.FocusedColor = System.Drawing.Color.Empty;
-            this.buttonFirday.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonFirday.ForeColor = System.Drawing.Color.Black;
-            this.buttonFirday.Image = null;
-            this.buttonFirday.ImageSize = new System.Drawing.Size(20, 20);
-            this.buttonFirday.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.buttonFirday.Location = new System.Drawing.Point(295, 9);
-            this.buttonFirday.Name = "buttonFirday";
-            this.buttonFirday.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(212)))), ((int)(((byte)(245)))));
-            this.buttonFirday.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.buttonFirday.OnHoverForeColor = System.Drawing.Color.White;
-            this.buttonFirday.OnHoverImage = null;
-            this.buttonFirday.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.buttonFirday.OnPressedColor = System.Drawing.Color.Black;
-            this.buttonFirday.Size = new System.Drawing.Size(46, 42);
-            this.buttonFirday.TabIndex = 60;
-            this.buttonFirday.Text = "ПТ";
-            this.buttonFirday.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // buttonThursday
-            // 
-            this.buttonThursday.Animated = true;
-            this.buttonThursday.AnimationHoverSpeed = 0.07F;
-            this.buttonThursday.AnimationSpeed = 0.03F;
-            this.buttonThursday.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(208)))), ((int)(((byte)(115)))));
-            this.buttonThursday.BorderColor = System.Drawing.Color.Black;
-            this.buttonThursday.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.buttonThursday.CheckedBorderColor = System.Drawing.Color.Black;
-            this.buttonThursday.CheckedForeColor = System.Drawing.Color.White;
-            this.buttonThursday.CheckedImage = null;
-            this.buttonThursday.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.buttonThursday.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonThursday.FocusedColor = System.Drawing.Color.Empty;
-            this.buttonThursday.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonThursday.ForeColor = System.Drawing.Color.Black;
-            this.buttonThursday.Image = null;
-            this.buttonThursday.ImageSize = new System.Drawing.Size(20, 20);
-            this.buttonThursday.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.buttonThursday.Location = new System.Drawing.Point(224, 9);
-            this.buttonThursday.Name = "buttonThursday";
-            this.buttonThursday.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(212)))), ((int)(((byte)(245)))));
-            this.buttonThursday.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.buttonThursday.OnHoverForeColor = System.Drawing.Color.White;
-            this.buttonThursday.OnHoverImage = null;
-            this.buttonThursday.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.buttonThursday.OnPressedColor = System.Drawing.Color.Black;
-            this.buttonThursday.Size = new System.Drawing.Size(46, 42);
-            this.buttonThursday.TabIndex = 59;
-            this.buttonThursday.Text = "ЧТ";
-            this.buttonThursday.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // buttonWednesday
-            // 
-            this.buttonWednesday.Animated = true;
-            this.buttonWednesday.AnimationHoverSpeed = 0.07F;
-            this.buttonWednesday.AnimationSpeed = 0.03F;
-            this.buttonWednesday.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(208)))), ((int)(((byte)(115)))));
-            this.buttonWednesday.BorderColor = System.Drawing.Color.Black;
-            this.buttonWednesday.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.buttonWednesday.CheckedBorderColor = System.Drawing.Color.Black;
-            this.buttonWednesday.CheckedForeColor = System.Drawing.Color.White;
-            this.buttonWednesday.CheckedImage = null;
-            this.buttonWednesday.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.buttonWednesday.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonWednesday.FocusedColor = System.Drawing.Color.Empty;
-            this.buttonWednesday.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonWednesday.ForeColor = System.Drawing.Color.Black;
-            this.buttonWednesday.Image = null;
-            this.buttonWednesday.ImageSize = new System.Drawing.Size(20, 20);
-            this.buttonWednesday.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.buttonWednesday.Location = new System.Drawing.Point(157, 9);
-            this.buttonWednesday.Name = "buttonWednesday";
-            this.buttonWednesday.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(212)))), ((int)(((byte)(245)))));
-            this.buttonWednesday.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.buttonWednesday.OnHoverForeColor = System.Drawing.Color.White;
-            this.buttonWednesday.OnHoverImage = null;
-            this.buttonWednesday.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.buttonWednesday.OnPressedColor = System.Drawing.Color.Black;
-            this.buttonWednesday.Size = new System.Drawing.Size(46, 42);
-            this.buttonWednesday.TabIndex = 58;
-            this.buttonWednesday.Text = "СР";
-            this.buttonWednesday.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // buttonTuesday
-            // 
-            this.buttonTuesday.Animated = true;
-            this.buttonTuesday.AnimationHoverSpeed = 0.07F;
-            this.buttonTuesday.AnimationSpeed = 0.03F;
-            this.buttonTuesday.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(208)))), ((int)(((byte)(115)))));
-            this.buttonTuesday.BorderColor = System.Drawing.Color.Black;
-            this.buttonTuesday.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.buttonTuesday.CheckedBorderColor = System.Drawing.Color.Black;
-            this.buttonTuesday.CheckedForeColor = System.Drawing.Color.White;
-            this.buttonTuesday.CheckedImage = null;
-            this.buttonTuesday.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.buttonTuesday.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonTuesday.FocusedColor = System.Drawing.Color.Empty;
-            this.buttonTuesday.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonTuesday.ForeColor = System.Drawing.Color.Black;
-            this.buttonTuesday.Image = null;
-            this.buttonTuesday.ImageSize = new System.Drawing.Size(20, 20);
-            this.buttonTuesday.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.buttonTuesday.Location = new System.Drawing.Point(91, 9);
-            this.buttonTuesday.Name = "buttonTuesday";
-            this.buttonTuesday.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(212)))), ((int)(((byte)(245)))));
-            this.buttonTuesday.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.buttonTuesday.OnHoverForeColor = System.Drawing.Color.White;
-            this.buttonTuesday.OnHoverImage = null;
-            this.buttonTuesday.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.buttonTuesday.OnPressedColor = System.Drawing.Color.Black;
-            this.buttonTuesday.Size = new System.Drawing.Size(46, 42);
-            this.buttonTuesday.TabIndex = 57;
-            this.buttonTuesday.Text = "ВТ";
-            this.buttonTuesday.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // buttonMondey
-            // 
-            this.buttonMondey.Animated = true;
-            this.buttonMondey.AnimationHoverSpeed = 0.07F;
-            this.buttonMondey.AnimationSpeed = 0.03F;
-            this.buttonMondey.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(208)))), ((int)(((byte)(115)))));
-            this.buttonMondey.BorderColor = System.Drawing.Color.Black;
-            this.buttonMondey.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.buttonMondey.CheckedBorderColor = System.Drawing.Color.Black;
-            this.buttonMondey.CheckedForeColor = System.Drawing.Color.White;
-            this.buttonMondey.CheckedImage = null;
-            this.buttonMondey.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.buttonMondey.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonMondey.FocusedColor = System.Drawing.Color.Empty;
-            this.buttonMondey.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonMondey.ForeColor = System.Drawing.Color.Black;
-            this.buttonMondey.Image = null;
-            this.buttonMondey.ImageSize = new System.Drawing.Size(20, 20);
-            this.buttonMondey.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.buttonMondey.Location = new System.Drawing.Point(20, 9);
-            this.buttonMondey.Name = "buttonMondey";
-            this.buttonMondey.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(212)))), ((int)(((byte)(245)))));
-            this.buttonMondey.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.buttonMondey.OnHoverForeColor = System.Drawing.Color.White;
-            this.buttonMondey.OnHoverImage = null;
-            this.buttonMondey.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.buttonMondey.OnPressedColor = System.Drawing.Color.Black;
-            this.buttonMondey.Size = new System.Drawing.Size(46, 42);
-            this.buttonMondey.TabIndex = 56;
-            this.buttonMondey.Text = "ПН";
-            this.buttonMondey.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // gunaSeparator1
             // 
             this.gunaSeparator1.LineColor = System.Drawing.Color.Black;
-            this.gunaSeparator1.Location = new System.Drawing.Point(3, 57);
+            this.gunaSeparator1.Location = new System.Drawing.Point(3, 68);
             this.gunaSeparator1.Name = "gunaSeparator1";
             this.gunaSeparator1.Size = new System.Drawing.Size(420, 10);
             this.gunaSeparator1.TabIndex = 26;
             this.gunaSeparator1.Thickness = 2;
-            // 
-            // gunaComboBox12
-            // 
-            this.gunaComboBox12.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox12.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
-            this.gunaComboBox12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(151)))), ((int)(((byte)(50)))));
-            this.gunaComboBox12.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox12.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaComboBox12.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunaComboBox12.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox12.FormattingEnabled = true;
-            this.gunaComboBox12.Items.AddRange(new object[] {
-            "Четная",
-            "Нечетная"});
-            this.gunaComboBox12.Location = new System.Drawing.Point(234, 590);
-            this.gunaComboBox12.MaxDropDownItems = 20;
-            this.gunaComboBox12.Name = "gunaComboBox12";
-            this.gunaComboBox12.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaComboBox12.OnHoverItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(151)))), ((int)(((byte)(50)))));
-            this.gunaComboBox12.Radius = 2;
-            this.gunaComboBox12.Size = new System.Drawing.Size(166, 26);
-            this.gunaComboBox12.TabIndex = 25;
-            // 
-            // gunaComboBox11
-            // 
-            this.gunaComboBox11.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox11.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
-            this.gunaComboBox11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(151)))), ((int)(((byte)(50)))));
-            this.gunaComboBox11.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox11.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaComboBox11.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunaComboBox11.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox11.FormattingEnabled = true;
-            this.gunaComboBox11.Items.AddRange(new object[] {
-            "Группа"});
-            this.gunaComboBox11.Location = new System.Drawing.Point(29, 590);
-            this.gunaComboBox11.MaxDropDownItems = 20;
-            this.gunaComboBox11.Name = "gunaComboBox11";
-            this.gunaComboBox11.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaComboBox11.OnHoverItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(151)))), ((int)(((byte)(50)))));
-            this.gunaComboBox11.Radius = 2;
-            this.gunaComboBox11.Size = new System.Drawing.Size(174, 26);
-            this.gunaComboBox11.TabIndex = 24;
             // 
             // label71
             // 
@@ -544,50 +639,6 @@ namespace ProjectYear
             this.label67.TabIndex = 19;
             this.label67.Text = "Первая пара";
             // 
-            // gunaComboBox9
-            // 
-            this.gunaComboBox9.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox9.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
-            this.gunaComboBox9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(151)))), ((int)(((byte)(50)))));
-            this.gunaComboBox9.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox9.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaComboBox9.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunaComboBox9.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox9.FormattingEnabled = true;
-            this.gunaComboBox9.Location = new System.Drawing.Point(282, 534);
-            this.gunaComboBox9.MaxDropDownItems = 20;
-            this.gunaComboBox9.Name = "gunaComboBox9";
-            this.gunaComboBox9.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaComboBox9.OnHoverItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(151)))), ((int)(((byte)(50)))));
-            this.gunaComboBox9.Radius = 2;
-            this.gunaComboBox9.Size = new System.Drawing.Size(118, 26);
-            this.gunaComboBox9.TabIndex = 18;
-            // 
-            // gunaComboBox10
-            // 
-            this.gunaComboBox10.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox10.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
-            this.gunaComboBox10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(151)))), ((int)(((byte)(50)))));
-            this.gunaComboBox10.DisplayMember = "апоо";
-            this.gunaComboBox10.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox10.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaComboBox10.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunaComboBox10.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox10.FormattingEnabled = true;
-            this.gunaComboBox10.Items.AddRange(new object[] {
-            "Выберите преподавателя"});
-            this.gunaComboBox10.Location = new System.Drawing.Point(29, 534);
-            this.gunaComboBox10.MaxDropDownItems = 20;
-            this.gunaComboBox10.Name = "gunaComboBox10";
-            this.gunaComboBox10.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaComboBox10.OnHoverItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(151)))), ((int)(((byte)(50)))));
-            this.gunaComboBox10.Radius = 2;
-            this.gunaComboBox10.Size = new System.Drawing.Size(232, 26);
-            this.gunaComboBox10.TabIndex = 17;
-            this.gunaComboBox10.Tag = "";
-            // 
             // editLesson5
             // 
             this.editLesson5.BackColor = System.Drawing.Color.Transparent;
@@ -606,50 +657,6 @@ namespace ProjectYear
             this.editLesson5.TabIndex = 16;
             this.editLesson5.Text = "Математическое моделирование";
             this.editLesson5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // gunaComboBox7
-            // 
-            this.gunaComboBox7.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox7.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
-            this.gunaComboBox7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(151)))), ((int)(((byte)(50)))));
-            this.gunaComboBox7.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox7.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaComboBox7.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunaComboBox7.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox7.FormattingEnabled = true;
-            this.gunaComboBox7.Location = new System.Drawing.Point(282, 433);
-            this.gunaComboBox7.MaxDropDownItems = 20;
-            this.gunaComboBox7.Name = "gunaComboBox7";
-            this.gunaComboBox7.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaComboBox7.OnHoverItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(151)))), ((int)(((byte)(50)))));
-            this.gunaComboBox7.Radius = 2;
-            this.gunaComboBox7.Size = new System.Drawing.Size(118, 26);
-            this.gunaComboBox7.TabIndex = 15;
-            // 
-            // gunaComboBox8
-            // 
-            this.gunaComboBox8.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox8.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
-            this.gunaComboBox8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(151)))), ((int)(((byte)(50)))));
-            this.gunaComboBox8.DisplayMember = "апоо";
-            this.gunaComboBox8.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox8.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaComboBox8.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunaComboBox8.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox8.FormattingEnabled = true;
-            this.gunaComboBox8.Items.AddRange(new object[] {
-            "Выберите преподавателя"});
-            this.gunaComboBox8.Location = new System.Drawing.Point(29, 433);
-            this.gunaComboBox8.MaxDropDownItems = 20;
-            this.gunaComboBox8.Name = "gunaComboBox8";
-            this.gunaComboBox8.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaComboBox8.OnHoverItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(151)))), ((int)(((byte)(50)))));
-            this.gunaComboBox8.Radius = 2;
-            this.gunaComboBox8.Size = new System.Drawing.Size(232, 26);
-            this.gunaComboBox8.TabIndex = 14;
-            this.gunaComboBox8.Tag = "";
             // 
             // editLesson4
             // 
@@ -670,50 +677,6 @@ namespace ProjectYear
             this.editLesson4.Text = "Математическое моделирование";
             this.editLesson4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // gunaComboBox5
-            // 
-            this.gunaComboBox5.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox5.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
-            this.gunaComboBox5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(151)))), ((int)(((byte)(50)))));
-            this.gunaComboBox5.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox5.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaComboBox5.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunaComboBox5.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox5.FormattingEnabled = true;
-            this.gunaComboBox5.Location = new System.Drawing.Point(282, 337);
-            this.gunaComboBox5.MaxDropDownItems = 20;
-            this.gunaComboBox5.Name = "gunaComboBox5";
-            this.gunaComboBox5.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaComboBox5.OnHoverItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(151)))), ((int)(((byte)(50)))));
-            this.gunaComboBox5.Radius = 2;
-            this.gunaComboBox5.Size = new System.Drawing.Size(118, 26);
-            this.gunaComboBox5.TabIndex = 12;
-            // 
-            // gunaComboBox6
-            // 
-            this.gunaComboBox6.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox6.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
-            this.gunaComboBox6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(151)))), ((int)(((byte)(50)))));
-            this.gunaComboBox6.DisplayMember = "апоо";
-            this.gunaComboBox6.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox6.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaComboBox6.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunaComboBox6.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox6.FormattingEnabled = true;
-            this.gunaComboBox6.Items.AddRange(new object[] {
-            "Выберите преподавателя"});
-            this.gunaComboBox6.Location = new System.Drawing.Point(29, 337);
-            this.gunaComboBox6.MaxDropDownItems = 20;
-            this.gunaComboBox6.Name = "gunaComboBox6";
-            this.gunaComboBox6.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaComboBox6.OnHoverItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(151)))), ((int)(((byte)(50)))));
-            this.gunaComboBox6.Radius = 2;
-            this.gunaComboBox6.Size = new System.Drawing.Size(232, 26);
-            this.gunaComboBox6.TabIndex = 11;
-            this.gunaComboBox6.Tag = "";
-            // 
             // editLesson3
             // 
             this.editLesson3.BackColor = System.Drawing.Color.Transparent;
@@ -733,50 +696,6 @@ namespace ProjectYear
             this.editLesson3.Text = "Математическое моделирование";
             this.editLesson3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // gunaComboBox3
-            // 
-            this.gunaComboBox3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
-            this.gunaComboBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(151)))), ((int)(((byte)(50)))));
-            this.gunaComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox3.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaComboBox3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunaComboBox3.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox3.FormattingEnabled = true;
-            this.gunaComboBox3.Location = new System.Drawing.Point(282, 240);
-            this.gunaComboBox3.MaxDropDownItems = 20;
-            this.gunaComboBox3.Name = "gunaComboBox3";
-            this.gunaComboBox3.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaComboBox3.OnHoverItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(151)))), ((int)(((byte)(50)))));
-            this.gunaComboBox3.Radius = 2;
-            this.gunaComboBox3.Size = new System.Drawing.Size(118, 26);
-            this.gunaComboBox3.TabIndex = 9;
-            // 
-            // gunaComboBox4
-            // 
-            this.gunaComboBox4.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox4.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
-            this.gunaComboBox4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(151)))), ((int)(((byte)(50)))));
-            this.gunaComboBox4.DisplayMember = "апоо";
-            this.gunaComboBox4.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox4.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaComboBox4.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunaComboBox4.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox4.FormattingEnabled = true;
-            this.gunaComboBox4.Items.AddRange(new object[] {
-            "Выберите преподавателя"});
-            this.gunaComboBox4.Location = new System.Drawing.Point(29, 240);
-            this.gunaComboBox4.MaxDropDownItems = 20;
-            this.gunaComboBox4.Name = "gunaComboBox4";
-            this.gunaComboBox4.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaComboBox4.OnHoverItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(151)))), ((int)(((byte)(50)))));
-            this.gunaComboBox4.Radius = 2;
-            this.gunaComboBox4.Size = new System.Drawing.Size(232, 26);
-            this.gunaComboBox4.TabIndex = 8;
-            this.gunaComboBox4.Tag = "";
-            // 
             // editLesson2
             // 
             this.editLesson2.BackColor = System.Drawing.Color.Transparent;
@@ -795,50 +714,6 @@ namespace ProjectYear
             this.editLesson2.TabIndex = 7;
             this.editLesson2.Text = "Математическое моделирование";
             this.editLesson2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // gunaComboBox2
-            // 
-            this.gunaComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
-            this.gunaComboBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(151)))), ((int)(((byte)(50)))));
-            this.gunaComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox2.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunaComboBox2.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox2.FormattingEnabled = true;
-            this.gunaComboBox2.Location = new System.Drawing.Point(282, 145);
-            this.gunaComboBox2.MaxDropDownItems = 20;
-            this.gunaComboBox2.Name = "gunaComboBox2";
-            this.gunaComboBox2.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaComboBox2.OnHoverItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(151)))), ((int)(((byte)(50)))));
-            this.gunaComboBox2.Radius = 2;
-            this.gunaComboBox2.Size = new System.Drawing.Size(118, 26);
-            this.gunaComboBox2.TabIndex = 6;
-            // 
-            // gunaComboBox1
-            // 
-            this.gunaComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
-            this.gunaComboBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(151)))), ((int)(((byte)(50)))));
-            this.gunaComboBox1.DisplayMember = "апоо";
-            this.gunaComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunaComboBox1.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox1.FormattingEnabled = true;
-            this.gunaComboBox1.Items.AddRange(new object[] {
-            "Выберите преподавателя"});
-            this.gunaComboBox1.Location = new System.Drawing.Point(29, 145);
-            this.gunaComboBox1.MaxDropDownItems = 20;
-            this.gunaComboBox1.Name = "gunaComboBox1";
-            this.gunaComboBox1.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaComboBox1.OnHoverItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(151)))), ((int)(((byte)(50)))));
-            this.gunaComboBox1.Radius = 2;
-            this.gunaComboBox1.Size = new System.Drawing.Size(232, 26);
-            this.gunaComboBox1.TabIndex = 5;
-            this.gunaComboBox1.Tag = "";
             // 
             // editLesson1
             // 
@@ -1020,11 +895,11 @@ namespace ProjectYear
             this.flowLayoutPanel1.Controls.Add(this.panelTuesday);
             this.flowLayoutPanel1.Controls.Add(this.panelWendnesday);
             this.flowLayoutPanel1.Controls.Add(this.panelThursday);
-            this.flowLayoutPanel1.Controls.Add(this.gunaGradient2Panel6);
+            this.flowLayoutPanel1.Controls.Add(this.panelFirsday);
             this.flowLayoutPanel1.Controls.Add(this.panelSaturday);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(131, 130);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(462, 640);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(462, 639);
             this.flowLayoutPanel1.TabIndex = 4;
             // 
             // panelTuesday
@@ -1175,7 +1050,7 @@ namespace ProjectYear
             this.panelWendnesday.Controls.Add(this.label26);
             this.panelWendnesday.Controls.Add(this.viewWednesday3);
             this.panelWendnesday.Controls.Add(this.label28);
-            this.panelWendnesday.Controls.Add(this.viewWendnesday2);
+            this.panelWendnesday.Controls.Add(this.viewWednesday2);
             this.panelWendnesday.Controls.Add(this.label30);
             this.panelWendnesday.Controls.Add(this.viewWednesday1);
             this.panelWendnesday.Controls.Add(this.label32);
@@ -1188,6 +1063,7 @@ namespace ProjectYear
             this.panelWendnesday.Radius = 6;
             this.panelWendnesday.Size = new System.Drawing.Size(421, 308);
             this.panelWendnesday.TabIndex = 22;
+            this.panelWendnesday.DoubleClick += new System.EventHandler(this.panelWendnesday_DoubleClick);
             // 
             // viewWednesday5
             // 
@@ -1252,16 +1128,16 @@ namespace ProjectYear
             this.label28.TabIndex = 16;
             this.label28.Text = "12:00 - 13:30";
             // 
-            // viewWendnesday2
+            // viewWednesday2
             // 
-            this.viewWendnesday2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
-            this.viewWendnesday2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.viewWendnesday2.Location = new System.Drawing.Point(110, 104);
-            this.viewWendnesday2.Name = "viewWendnesday2";
-            this.viewWendnesday2.Size = new System.Drawing.Size(286, 33);
-            this.viewWendnesday2.TabIndex = 15;
-            this.viewWendnesday2.Text = "Математическое Моделирование 501ГТ";
-            this.viewWendnesday2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.viewWednesday2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
+            this.viewWednesday2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.viewWednesday2.Location = new System.Drawing.Point(110, 104);
+            this.viewWednesday2.Name = "viewWednesday2";
+            this.viewWednesday2.Size = new System.Drawing.Size(286, 33);
+            this.viewWednesday2.TabIndex = 15;
+            this.viewWednesday2.Text = "Математическое Моделирование 501ГТ";
+            this.viewWednesday2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label30
             // 
@@ -1326,6 +1202,7 @@ namespace ProjectYear
             this.panelThursday.Radius = 6;
             this.panelThursday.Size = new System.Drawing.Size(421, 308);
             this.panelThursday.TabIndex = 22;
+            this.panelThursday.DoubleClick += new System.EventHandler(this.panelThursday_DoubleClick);
             // 
             // viewThursday5
             // 
@@ -1442,28 +1319,29 @@ namespace ProjectYear
             this.label44.TabIndex = 0;
             this.label44.Text = "Четверг";
             // 
-            // gunaGradient2Panel6
+            // panelFirsday
             // 
-            this.gunaGradient2Panel6.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGradient2Panel6.Controls.Add(this.viewFirsday5);
-            this.gunaGradient2Panel6.Controls.Add(this.label46);
-            this.gunaGradient2Panel6.Controls.Add(this.viewFirsday4);
-            this.gunaGradient2Panel6.Controls.Add(this.label48);
-            this.gunaGradient2Panel6.Controls.Add(this.viewFirsday3);
-            this.gunaGradient2Panel6.Controls.Add(this.label50);
-            this.gunaGradient2Panel6.Controls.Add(this.viewFirsday2);
-            this.gunaGradient2Panel6.Controls.Add(this.label52);
-            this.gunaGradient2Panel6.Controls.Add(this.viewFirsday1);
-            this.gunaGradient2Panel6.Controls.Add(this.label54);
-            this.gunaGradient2Panel6.Controls.Add(this.label55);
-            this.gunaGradient2Panel6.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(213)))));
-            this.gunaGradient2Panel6.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(213)))));
-            this.gunaGradient2Panel6.Location = new System.Drawing.Point(10, 1322);
-            this.gunaGradient2Panel6.Margin = new System.Windows.Forms.Padding(10);
-            this.gunaGradient2Panel6.Name = "gunaGradient2Panel6";
-            this.gunaGradient2Panel6.Radius = 6;
-            this.gunaGradient2Panel6.Size = new System.Drawing.Size(421, 308);
-            this.gunaGradient2Panel6.TabIndex = 23;
+            this.panelFirsday.BackColor = System.Drawing.Color.Transparent;
+            this.panelFirsday.Controls.Add(this.viewFirsday5);
+            this.panelFirsday.Controls.Add(this.label46);
+            this.panelFirsday.Controls.Add(this.viewFirsday4);
+            this.panelFirsday.Controls.Add(this.label48);
+            this.panelFirsday.Controls.Add(this.viewFirsday3);
+            this.panelFirsday.Controls.Add(this.label50);
+            this.panelFirsday.Controls.Add(this.viewFirsday2);
+            this.panelFirsday.Controls.Add(this.label52);
+            this.panelFirsday.Controls.Add(this.viewFirsday1);
+            this.panelFirsday.Controls.Add(this.label54);
+            this.panelFirsday.Controls.Add(this.label55);
+            this.panelFirsday.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(213)))));
+            this.panelFirsday.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(213)))));
+            this.panelFirsday.Location = new System.Drawing.Point(10, 1322);
+            this.panelFirsday.Margin = new System.Windows.Forms.Padding(10);
+            this.panelFirsday.Name = "panelFirsday";
+            this.panelFirsday.Radius = 6;
+            this.panelFirsday.Size = new System.Drawing.Size(421, 308);
+            this.panelFirsday.TabIndex = 23;
+            this.panelFirsday.DoubleClick += new System.EventHandler(this.panelFirsday_DoubleClick);
             // 
             // viewFirsday5
             // 
@@ -1602,6 +1480,7 @@ namespace ProjectYear
             this.panelSaturday.Radius = 6;
             this.panelSaturday.Size = new System.Drawing.Size(421, 308);
             this.panelSaturday.TabIndex = 23;
+            this.panelSaturday.DoubleClick += new System.EventHandler(this.panelSaturday_DoubleClick);
             // 
             // viewSaturday5
             // 
@@ -1718,18 +1597,29 @@ namespace ProjectYear
             this.label66.TabIndex = 0;
             this.label66.Text = "Суббота";
             // 
+            // separator
+            // 
+            this.separator.CausesValidation = false;
+            this.separator.LineColor = System.Drawing.Color.Black;
+            this.separator.Location = new System.Drawing.Point(21, 57);
+            this.separator.Name = "separator";
+            this.separator.Size = new System.Drawing.Size(52, 10);
+            this.separator.TabIndex = 88;
+            this.separator.Thickness = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1034, 782);
+            this.ClientSize = new System.Drawing.Size(1034, 781);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.gunaLabel2);
             this.Controls.Add(this.gunaGradient2Panel2);
             this.Controls.Add(this.gunaGradient2Panel1);
-            this.MinimumSize = new System.Drawing.Size(1050, 770);
+            this.MinimumSize = new System.Drawing.Size(1050, 820);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Расписание";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.gunaGradient2Panel1.ResumeLayout(false);
             this.gunaGradient2Panel2.ResumeLayout(false);
@@ -1743,8 +1633,8 @@ namespace ProjectYear
             this.panelWendnesday.PerformLayout();
             this.panelThursday.ResumeLayout(false);
             this.panelThursday.PerformLayout();
-            this.gunaGradient2Panel6.ResumeLayout(false);
-            this.gunaGradient2Panel6.PerformLayout();
+            this.panelFirsday.ResumeLayout(false);
+            this.panelFirsday.PerformLayout();
             this.panelSaturday.ResumeLayout(false);
             this.panelSaturday.PerformLayout();
             this.ResumeLayout(false);
@@ -1789,7 +1679,7 @@ namespace ProjectYear
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label viewWednesday3;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label viewWendnesday2;
+        private System.Windows.Forms.Label viewWednesday2;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label viewWednesday1;
         private System.Windows.Forms.Label label32;
@@ -1806,7 +1696,7 @@ namespace ProjectYear
         private System.Windows.Forms.Label viewThursday1;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label44;
-        private Guna.UI.WinForms.GunaGradient2Panel gunaGradient2Panel6;
+        private Guna.UI.WinForms.GunaGradient2Panel panelFirsday;
         private System.Windows.Forms.Label viewFirsday5;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label viewFirsday4;
@@ -1830,36 +1720,37 @@ namespace ProjectYear
         private System.Windows.Forms.Label viewSaturday1;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Label label66;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox2;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox1;
         private Guna.UI.WinForms.GunaTextBox editLesson1;
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Label label70;
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Label label68;
         private System.Windows.Forms.Label label67;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox9;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox10;
         private Guna.UI.WinForms.GunaTextBox editLesson5;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox7;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox8;
         private Guna.UI.WinForms.GunaTextBox editLesson4;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox5;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox6;
         private Guna.UI.WinForms.GunaTextBox editLesson3;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox3;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox4;
         private Guna.UI.WinForms.GunaTextBox editLesson2;
         private Guna.UI.WinForms.GunaSeparator gunaSeparator1;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox12;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox11;
+        private Guna.UI.WinForms.GunaAdvenceButton buttonWrite;
+        private System.Windows.Forms.ComboBox editChet;
+        private System.Windows.Forms.ComboBox editGroup;
+        private System.Windows.Forms.ComboBox editOffise2;
+        private System.Windows.Forms.ComboBox editTicher2;
+        private System.Windows.Forms.ComboBox editOffise5;
+        private System.Windows.Forms.ComboBox editTicher5;
+        private System.Windows.Forms.ComboBox editOffise4;
+        private System.Windows.Forms.ComboBox editTicher4;
+        private System.Windows.Forms.ComboBox editOffise3;
+        private System.Windows.Forms.ComboBox editTicher3;
+        private System.Windows.Forms.ComboBox editOffise1;
+        private System.Windows.Forms.ComboBox editTicher1;
         private Guna.UI.WinForms.GunaAdvenceButton buttonSaturday;
         private Guna.UI.WinForms.GunaAdvenceButton buttonFirday;
         private Guna.UI.WinForms.GunaAdvenceButton buttonThursday;
         private Guna.UI.WinForms.GunaAdvenceButton buttonWednesday;
         private Guna.UI.WinForms.GunaAdvenceButton buttonTuesday;
-        private Guna.UI.WinForms.GunaAdvenceButton buttonMondey;
-        private Guna.UI.WinForms.GunaAdvenceButton buttonWrite;
+        private Guna.UI.WinForms.GunaAdvenceButton buttonMonday;
+        private Guna.UI.WinForms.GunaSeparator separator;
     }
 }
 
