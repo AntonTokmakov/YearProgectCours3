@@ -50,7 +50,7 @@ namespace ProjectYear
 
             Label[] wednesdayLB = new Label[] { viewWednesday1, viewWednesday2, viewWednesday3, viewWednesday4, viewWednesday5 };
             wednesday.addLabels(wednesdayLB);
-            wednesday.fillUpdataDB("ИСП-20-2");
+            wednesday.fillUpdataDB("ИСП-20-2");     // чтоб добавить дни, надо скопировать эти три строчки и написать свои дни
 
 
             GunaTextBox[] textBox = new GunaTextBox[5] { editLesson1, editLesson2, editLesson3, editLesson4, editLesson5 };
@@ -90,6 +90,10 @@ namespace ProjectYear
                     }
                     else
                     {
+                        if (true)
+                        {
+
+                        }
                         nowClickDay.addDB(i, editGroup.Text, editLessonsTBList.getItemTB(i).Text, editChet.Text, nowClickDay.weekday,
                             editTicherCBList.getItemCB(i).Text, editOffiseCBList.getItemCB(i).Text);
                         nowClickDay.fillUpdataDB("ИСП-20-2");
