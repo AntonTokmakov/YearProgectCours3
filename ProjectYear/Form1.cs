@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ProjectYear.Class;
 using Guna.UI.WinForms;
+using MySql.Data.MySqlClient;
 
 namespace ProjectYear
 {
@@ -57,7 +58,9 @@ namespace ProjectYear
             wednesday.editLessonsData(3, "Биология", "Богдавновская Д.Е", "343аГТ");
             wednesday.editLessonsData(4, "Линукс", "Белавенцева Д.Ю", "501ГТ");
             // Имитация БД
-            
+
+           
+
             Label[] mondayLB = new Label[] { viewMonday1, viewMonday2, viewMonday3, viewMonday4, viewMonday5};
             monday.addLabels(mondayLB);
             monday.fillDayView();
@@ -104,9 +107,9 @@ namespace ProjectYear
                 }
                 nowClickDay.fillDayView();
             }
-            //separator.Visible = false;
         }
 
+        #region Кнопки в интерфейсе
         private void panelMonday_DoubleClick(object sender, EventArgs e)
         {
             buttonMonday_Click(sender, e);
@@ -172,5 +175,12 @@ namespace ProjectYear
             changeEditCard(saturday);
             separator.Location = new Point(buttonSaturday.Location.X, separator.Location.Y);
         }
+
+        private void separator_LocationChanged(object sender, EventArgs e)
+        {
+            separator.Visible = true;
+        }
+        #endregion
+
     }
 }

@@ -652,7 +652,7 @@ namespace ProjectYear
             this.editLesson5.Location = new System.Drawing.Point(29, 496);
             this.editLesson5.Name = "editLesson5";
             this.editLesson5.PasswordChar = '\0';
-            this.editLesson5.Radius = 2;
+            this.editLesson5.Radius = 4;
             this.editLesson5.Size = new System.Drawing.Size(371, 32);
             this.editLesson5.TabIndex = 16;
             this.editLesson5.Text = "Математическое моделирование";
@@ -671,7 +671,7 @@ namespace ProjectYear
             this.editLesson4.Location = new System.Drawing.Point(29, 395);
             this.editLesson4.Name = "editLesson4";
             this.editLesson4.PasswordChar = '\0';
-            this.editLesson4.Radius = 2;
+            this.editLesson4.Radius = 4;
             this.editLesson4.Size = new System.Drawing.Size(371, 32);
             this.editLesson4.TabIndex = 13;
             this.editLesson4.Text = "Математическое моделирование";
@@ -690,7 +690,7 @@ namespace ProjectYear
             this.editLesson3.Location = new System.Drawing.Point(29, 299);
             this.editLesson3.Name = "editLesson3";
             this.editLesson3.PasswordChar = '\0';
-            this.editLesson3.Radius = 2;
+            this.editLesson3.Radius = 4;
             this.editLesson3.Size = new System.Drawing.Size(371, 32);
             this.editLesson3.TabIndex = 10;
             this.editLesson3.Text = "Математическое моделирование";
@@ -709,7 +709,7 @@ namespace ProjectYear
             this.editLesson2.Location = new System.Drawing.Point(29, 202);
             this.editLesson2.Name = "editLesson2";
             this.editLesson2.PasswordChar = '\0';
-            this.editLesson2.Radius = 2;
+            this.editLesson2.Radius = 4;
             this.editLesson2.Size = new System.Drawing.Size(371, 32);
             this.editLesson2.TabIndex = 7;
             this.editLesson2.Text = "Математическое моделирование";
@@ -728,7 +728,7 @@ namespace ProjectYear
             this.editLesson1.Location = new System.Drawing.Point(29, 107);
             this.editLesson1.Name = "editLesson1";
             this.editLesson1.PasswordChar = '\0';
-            this.editLesson1.Radius = 2;
+            this.editLesson1.Radius = 4;
             this.editLesson1.Size = new System.Drawing.Size(371, 32);
             this.editLesson1.TabIndex = 4;
             this.editLesson1.Text = "Математическое моделирование";
@@ -1601,11 +1601,13 @@ namespace ProjectYear
             // 
             this.separator.CausesValidation = false;
             this.separator.LineColor = System.Drawing.Color.Black;
-            this.separator.Location = new System.Drawing.Point(21, 57);
+            this.separator.Location = new System.Drawing.Point(19, 57);
             this.separator.Name = "separator";
             this.separator.Size = new System.Drawing.Size(52, 10);
             this.separator.TabIndex = 88;
             this.separator.Thickness = 4;
+            this.separator.Visible = false;
+            this.separator.LocationChanged += new System.EventHandler(this.separator_LocationChanged);
             // 
             // Form1
             // 
