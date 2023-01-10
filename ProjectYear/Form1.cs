@@ -22,12 +22,12 @@ namespace ProjectYear
 
         #region Глобальные переменные
 
-        DayLessons monday = new DayLessons();
-        DayLessons tuesday = new DayLessons();
-        DayLessons wednesday = new DayLessons();
-        DayLessons thursday = new DayLessons();
-        DayLessons firsday = new DayLessons();
-        DayLessons saturday = new DayLessons();
+        DayLessons monday = new DayLessons("monday");
+        DayLessons tuesday = new DayLessons("tuesday");
+        DayLessons wednesday = new DayLessons("wednesday");
+        DayLessons thursday = new DayLessons("thursday");
+        DayLessons firsday = new DayLessons("firsday");
+        DayLessons saturday = new DayLessons("saturday");
         ArrayList editLessonsTBList = new ArrayList();
         ArrayList editTicherCBList = new ArrayList();
         ArrayList editOffiseCBList = new ArrayList();
@@ -39,39 +39,19 @@ namespace ProjectYear
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // Имитация БД
-            monday.editLessonsData(0, "Математическое моделирование", "Богдановская Д.Е", "343аГТ");
-            monday.editLessonsData(1, "Операционные системы и среды", "Белавенцева Д.Ю", "501ГТ");
-            monday.editLessonsData(2, "ВНиПКС", "Белый А.М.", "343ГТ");
-            monday.editLessonsData(3, "Системное администрирование", "Грачев А.В.", "401ЦК");
-            monday.editLessonsData(4, "ИСРПО", "Богдавновская Д.Е", "343аГТ");
-
-            tuesday.editLessonsData(0, "ОКФКС", "Белый А.М.", "343ГТ");
-            tuesday.editLessonsData(1, "ТРПО", "Богдановская Д.Е", "343аГТ");
-            tuesday.editLessonsData(2, "Биология", "Богдавновская Д.Е", "343аГТ");
-            tuesday.editLessonsData(3, "Литература", "Грачев А.В.", "401ЦК");
-            tuesday.editLessonsData(4, "Линукс", "Белавенцева Д.Ю", "501ГТ");
-
-            wednesday.editLessonsData(0, "ТРПО", "Богдановская Д.Е", "343аГТ");
-            wednesday.editLessonsData(1, "Литература", "Грачев А.В.", "401ЦК");
-            wednesday.editLessonsData(2, "ОКФКС", "Белый А.М.", "343ГТ");
-            wednesday.editLessonsData(3, "Биология", "Богдавновская Д.Е", "343аГТ");
-            wednesday.editLessonsData(4, "Линукс", "Белавенцева Д.Ю", "501ГТ");
-            // Имитация БД
-
-           
 
             Label[] mondayLB = new Label[] { viewMonday1, viewMonday2, viewMonday3, viewMonday4, viewMonday5};
             monday.addLabels(mondayLB);
-            monday.fillDayView();
+            monday.fillUpdataDB("ИСП-20-2");
 
             Label[] tuesdayLB = new Label[] { viewTuesday1, viewTuesday2, viewTuesday3, viewTuesday4, viewTuesday5 };
             tuesday.addLabels(tuesdayLB);
-            tuesday.fillDayView();
-            
+            tuesday.fillUpdataDB("ИСП-20-2");
+
             Label[] wednesdayLB = new Label[] { viewWednesday1, viewWednesday2, viewWednesday3, viewWednesday4, viewWednesday5 };
             wednesday.addLabels(wednesdayLB);
-            wednesday.fillDayView();
+            wednesday.fillUpdataDB("ИСП-20-2");
+
 
             GunaTextBox[] textBox = new GunaTextBox[5] { editLesson1, editLesson2, editLesson3, editLesson4, editLesson5 };
             editLessonsTBList.addItems(textBox);
@@ -102,10 +82,19 @@ namespace ProjectYear
             {
                 for (int i = 0; i < nowClickDay.getCount(); i++)
                 {
-                    nowClickDay.editLessonsData(i, editLessonsTBList.getItemTB(i).Text, 
-                        editTicherCBList.getItemCB(i).Text, editOffiseCBList.getItemCB(i).Text);
+                    if (editLessonsTBList.getItemTB(i).Equals(nowClickDay.getLessonsData(i).lessons) &&
+                        editTicherCBList.getItemCB(i).Equals(nowClickDay.getLessonsData(i).teacher) &&
+                        editOffiseCBList.getItemCB(i).Equals(nowClickDay.getLessonsData(i).offise))
+                    {
+
+                    }
+                    else
+                    {
+                        nowClickDay.addDB(i, editGroup.Text, editLessonsTBList.getItemTB(i).Text, editChet.Text, nowClickDay.weekday,
+                            editTicherCBList.getItemCB(i).Text, editOffiseCBList.getItemCB(i).Text);
+                        nowClickDay.fillUpdataDB("ИСП-20-2");
+                    }
                 }
-                nowClickDay.fillDayView();
             }
         }
 

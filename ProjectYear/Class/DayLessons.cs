@@ -15,21 +15,38 @@ namespace ProjectYear.Class
         string[] dayId = new string[5];
         string[] dayLessons = new string[5];
         string[] dayTeacher = new string[5];
-        string[] dayoffise = new string[5];
+        string[] dayOffise = new string[5];
         Label[] labels = new Label[5];
+        public string weekday;
+        public string UpDown;
 
-        public void fillChangeGroupDB()
+        public DayLessons(string weekday, bool uneven = false)
+        {
+            this.weekday = weekday;
+            this.UpDown = uneven ? "Нечетное":"Четное";
+        }
+
+        public void fillUpdataDB(string group)
         {
             DB db = new DB();
             DataTable dTable = new DataTable();
             db.openConnection();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
-            MySqlCommand command = new MySqlCommand($"SELECT ", db.getConnection());
+            MySqlCommand command = new MySqlCommand($"SELECT * FROM datalesson WHERE group1 = '{group}' AND UpDown = '{"Четное"}' AND weekday = '{weekday}'", db.getConnection());
 
             adapter.SelectCommand = command;
             adapter.Fill(dTable);
 
             db.closeConnection();
+
+            for (int i = 0; i < dTable.Rows.Count; i++)
+            {
+                var dtRow = dTable.Rows[i];
+                labels[i].Text = dtRow[2].ToString();
+                dayLessons[i] = dtRow[2].ToString();
+                dayTeacher[i] = dtRow[5].ToString();
+                dayOffise[i] = dtRow[6].ToString();
+            }
         }
 
         public void addLabels(Label[] labels)
@@ -42,17 +59,24 @@ namespace ProjectYear.Class
             return labels[index];
         }
 
-        public void editLessonsData(int index, string lesson, string teacher, string offise)
+        public void editLessonsData(int numberLesson, string group, string lesson, string UpDown, string weekday, string teacher, string office)
         {
-            dayLessons[index] = lesson;
-            dayTeacher[index] = teacher;
-            dayoffise[index] = offise;
-            addDB(group, lesson, UpDown, weekday, teacher, offise, numberLesson);
+            /*try
+            {
+
+            }
+            catch (Exception) 
+            { */
+                /*dayLessons[numberLesson] = lesson;
+                dayTeacher[numberLesson] = teacher;
+                dayoffise[numberLesson] = office;*/
+                addDB(numberLesson, group, lesson, UpDown, weekday, teacher, office);
+            //}
         }
 
         public (string lessons, string teacher, string offise) getLessonsData(int index)
         {
-            return (dayLessons[index], dayTeacher[index], dayoffise[index]);
+            return (dayLessons[index], dayTeacher[index], dayOffise[index]);
         }
 
         public int getCount()
@@ -60,28 +84,18 @@ namespace ProjectYear.Class
             return dayLessons.Length;
         }
 
-        public void fillDayView()
-        {
-            for (int i = 0; i < labels.Length; i++)
-            {
-                labels[i].Text = dayLessons[i];
-            }
-        }
-
-        public void addDB(string group, string lesson, string UpDown, string weekday, string teacher, string office, string numberLesson)
+        public void addDB(int numberLesson, string group, string lesson, string UpDown, string weekday, string teacher, string office)
         {
             DB db = new DB();
             DataTable dTable = new DataTable();
             db.openConnection();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
-            MySqlCommand command = new MySqlCommand($"INSERT INTO `datalesson` (`id`, `group`, `lesson`, `UpDown`, `weekday`, `teacher`, `office`, `numberLesson`) VALUES (NULL, {group}, {lesson}, {UpDown}, {weekday}, {teacher}, {office}, {numberLesson})", db.getConnection());
+            MySqlCommand command = new MySqlCommand($"INSERT INTO `datalesson` (`id`, `group1`, `lesson`, `UpDown`, `weekday`, `teacher`, `office`, `numberLesson`) VALUES (NULL, '{group}', '{lesson}', '{UpDown}', '{weekday}', '{teacher}', '{office}', '{numberLesson}')", db.getConnection());
 
             adapter.SelectCommand = command;
             adapter.Fill(dTable);
 
             db.closeConnection();
         }
-
-
     }
 }

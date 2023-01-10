@@ -74,7 +74,7 @@ namespace ProjectYear
             this.label5 = new System.Windows.Forms.Label();
             this.viewMonday1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelMonday = new System.Windows.Forms.Label();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panelTuesday = new Guna.UI.WinForms.GunaGradient2Panel();
@@ -88,7 +88,7 @@ namespace ProjectYear
             this.label19 = new System.Windows.Forms.Label();
             this.viewTuesday1 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
+            this.labelTuesday = new System.Windows.Forms.Label();
             this.panelWendnesday = new Guna.UI.WinForms.GunaGradient2Panel();
             this.viewWednesday5 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
@@ -100,7 +100,7 @@ namespace ProjectYear
             this.label30 = new System.Windows.Forms.Label();
             this.viewWednesday1 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
+            this.labelWednesday = new System.Windows.Forms.Label();
             this.panelThursday = new Guna.UI.WinForms.GunaGradient2Panel();
             this.viewThursday5 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
@@ -112,7 +112,7 @@ namespace ProjectYear
             this.label41 = new System.Windows.Forms.Label();
             this.viewThursday1 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
+            this.labelThursday = new System.Windows.Forms.Label();
             this.panelFirsday = new Guna.UI.WinForms.GunaGradient2Panel();
             this.viewFirsday5 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
@@ -124,7 +124,7 @@ namespace ProjectYear
             this.label52 = new System.Windows.Forms.Label();
             this.viewFirsday1 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
+            this.labelFirday = new System.Windows.Forms.Label();
             this.panelSaturday = new Guna.UI.WinForms.GunaGradient2Panel();
             this.viewSaturday5 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
@@ -136,7 +136,7 @@ namespace ProjectYear
             this.label63 = new System.Windows.Forms.Label();
             this.viewSaturday1 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
+            this.labelSaturday = new System.Windows.Forms.Label();
             this.separator = new Guna.UI.WinForms.GunaSeparator();
             this.gunaGradient2Panel1.SuspendLayout();
             this.gunaGradient2Panel2.SuspendLayout();
@@ -446,7 +446,7 @@ namespace ProjectYear
             this.editGroup.Name = "editGroup";
             this.editGroup.Size = new System.Drawing.Size(175, 21);
             this.editGroup.TabIndex = 73;
-            this.editGroup.Text = "Преподаватель";
+            this.editGroup.Text = "ИСП-20-2";
             // 
             // editOffise2
             // 
@@ -747,7 +747,7 @@ namespace ProjectYear
             this.panelMonday.Controls.Add(this.label5);
             this.panelMonday.Controls.Add(this.viewMonday1);
             this.panelMonday.Controls.Add(this.label2);
-            this.panelMonday.Controls.Add(this.label1);
+            this.panelMonday.Controls.Add(this.labelMonday);
             this.panelMonday.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(213)))));
             this.panelMonday.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(213)))));
             this.panelMonday.Location = new System.Drawing.Point(10, 10);
@@ -863,15 +863,15 @@ namespace ProjectYear
             this.label2.TabIndex = 12;
             this.label2.Text = "8:30 - 9:50";
             // 
-            // label1
+            // labelMonday
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(146, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Понедельник";
+            this.labelMonday.AutoSize = true;
+            this.labelMonday.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelMonday.Location = new System.Drawing.Point(146, 11);
+            this.labelMonday.Name = "labelMonday";
+            this.labelMonday.Size = new System.Drawing.Size(136, 25);
+            this.labelMonday.TabIndex = 0;
+            this.labelMonday.Text = "Понедельник";
             // 
             // gunaLabel2
             // 
@@ -915,7 +915,7 @@ namespace ProjectYear
             this.panelTuesday.Controls.Add(this.label19);
             this.panelTuesday.Controls.Add(this.viewTuesday1);
             this.panelTuesday.Controls.Add(this.label21);
-            this.panelTuesday.Controls.Add(this.label22);
+            this.panelTuesday.Controls.Add(this.labelTuesday);
             this.panelTuesday.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(213)))));
             this.panelTuesday.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(213)))));
             this.panelTuesday.Location = new System.Drawing.Point(10, 338);
@@ -1031,15 +1031,15 @@ namespace ProjectYear
             this.label21.TabIndex = 12;
             this.label21.Text = "8:30 - 9:50";
             // 
-            // label22
+            // labelTuesday
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label22.Location = new System.Drawing.Point(165, 9);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(90, 25);
-            this.label22.TabIndex = 0;
-            this.label22.Text = "Вторник";
+            this.labelTuesday.AutoSize = true;
+            this.labelTuesday.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTuesday.Location = new System.Drawing.Point(165, 9);
+            this.labelTuesday.Name = "labelTuesday";
+            this.labelTuesday.Size = new System.Drawing.Size(90, 25);
+            this.labelTuesday.TabIndex = 0;
+            this.labelTuesday.Text = "Вторник";
             // 
             // panelWendnesday
             // 
@@ -1054,7 +1054,7 @@ namespace ProjectYear
             this.panelWendnesday.Controls.Add(this.label30);
             this.panelWendnesday.Controls.Add(this.viewWednesday1);
             this.panelWendnesday.Controls.Add(this.label32);
-            this.panelWendnesday.Controls.Add(this.label33);
+            this.panelWendnesday.Controls.Add(this.labelWednesday);
             this.panelWendnesday.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(213)))));
             this.panelWendnesday.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(213)))));
             this.panelWendnesday.Location = new System.Drawing.Point(10, 666);
@@ -1170,15 +1170,15 @@ namespace ProjectYear
             this.label32.TabIndex = 12;
             this.label32.Text = "8:30 - 9:50";
             // 
-            // label33
+            // labelWednesday
             // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label33.Location = new System.Drawing.Point(176, 11);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(69, 25);
-            this.label33.TabIndex = 0;
-            this.label33.Text = "Среда";
+            this.labelWednesday.AutoSize = true;
+            this.labelWednesday.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelWednesday.Location = new System.Drawing.Point(176, 11);
+            this.labelWednesday.Name = "labelWednesday";
+            this.labelWednesday.Size = new System.Drawing.Size(69, 25);
+            this.labelWednesday.TabIndex = 0;
+            this.labelWednesday.Text = "Среда";
             // 
             // panelThursday
             // 
@@ -1193,7 +1193,7 @@ namespace ProjectYear
             this.panelThursday.Controls.Add(this.label41);
             this.panelThursday.Controls.Add(this.viewThursday1);
             this.panelThursday.Controls.Add(this.label43);
-            this.panelThursday.Controls.Add(this.label44);
+            this.panelThursday.Controls.Add(this.labelThursday);
             this.panelThursday.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(213)))));
             this.panelThursday.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(213)))));
             this.panelThursday.Location = new System.Drawing.Point(10, 994);
@@ -1309,15 +1309,15 @@ namespace ProjectYear
             this.label43.TabIndex = 12;
             this.label43.Text = "8:30 - 9:50";
             // 
-            // label44
+            // labelThursday
             // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label44.Location = new System.Drawing.Point(162, 11);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(88, 25);
-            this.label44.TabIndex = 0;
-            this.label44.Text = "Четверг";
+            this.labelThursday.AutoSize = true;
+            this.labelThursday.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelThursday.Location = new System.Drawing.Point(162, 11);
+            this.labelThursday.Name = "labelThursday";
+            this.labelThursday.Size = new System.Drawing.Size(88, 25);
+            this.labelThursday.TabIndex = 0;
+            this.labelThursday.Text = "Четверг";
             // 
             // panelFirsday
             // 
@@ -1332,7 +1332,7 @@ namespace ProjectYear
             this.panelFirsday.Controls.Add(this.label52);
             this.panelFirsday.Controls.Add(this.viewFirsday1);
             this.panelFirsday.Controls.Add(this.label54);
-            this.panelFirsday.Controls.Add(this.label55);
+            this.panelFirsday.Controls.Add(this.labelFirday);
             this.panelFirsday.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(213)))));
             this.panelFirsday.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(213)))));
             this.panelFirsday.Location = new System.Drawing.Point(10, 1322);
@@ -1448,15 +1448,15 @@ namespace ProjectYear
             this.label54.TabIndex = 12;
             this.label54.Text = "8:30 - 9:50";
             // 
-            // label55
+            // labelFirday
             // 
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label55.Location = new System.Drawing.Point(159, 11);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(93, 25);
-            this.label55.TabIndex = 0;
-            this.label55.Text = "Пятница";
+            this.labelFirday.AutoSize = true;
+            this.labelFirday.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelFirday.Location = new System.Drawing.Point(159, 11);
+            this.labelFirday.Name = "labelFirday";
+            this.labelFirday.Size = new System.Drawing.Size(93, 25);
+            this.labelFirday.TabIndex = 0;
+            this.labelFirday.Text = "Пятница";
             // 
             // panelSaturday
             // 
@@ -1471,7 +1471,7 @@ namespace ProjectYear
             this.panelSaturday.Controls.Add(this.label63);
             this.panelSaturday.Controls.Add(this.viewSaturday1);
             this.panelSaturday.Controls.Add(this.label65);
-            this.panelSaturday.Controls.Add(this.label66);
+            this.panelSaturday.Controls.Add(this.labelSaturday);
             this.panelSaturday.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(213)))));
             this.panelSaturday.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(213)))));
             this.panelSaturday.Location = new System.Drawing.Point(10, 1650);
@@ -1587,15 +1587,15 @@ namespace ProjectYear
             this.label65.TabIndex = 12;
             this.label65.Text = "8:30 - 9:50";
             // 
-            // label66
+            // labelSaturday
             // 
-            this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label66.Location = new System.Drawing.Point(159, 11);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(89, 25);
-            this.label66.TabIndex = 0;
-            this.label66.Text = "Суббота";
+            this.labelSaturday.AutoSize = true;
+            this.labelSaturday.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelSaturday.Location = new System.Drawing.Point(159, 11);
+            this.labelSaturday.Name = "labelSaturday";
+            this.labelSaturday.Size = new System.Drawing.Size(89, 25);
+            this.labelSaturday.TabIndex = 0;
+            this.labelSaturday.Text = "Суббота";
             // 
             // separator
             // 
@@ -1661,7 +1661,7 @@ namespace ProjectYear
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label viewMonday1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelMonday;
         private Guna.UI.WinForms.GunaGradient2Panel panelTuesday;
         private System.Windows.Forms.Label viewTuesday5;
         private System.Windows.Forms.Label label13;
@@ -1673,7 +1673,7 @@ namespace ProjectYear
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label viewTuesday1;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label labelTuesday;
         private Guna.UI.WinForms.GunaGradient2Panel panelWendnesday;
         private System.Windows.Forms.Label viewWednesday5;
         private System.Windows.Forms.Label label24;
@@ -1685,7 +1685,7 @@ namespace ProjectYear
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label viewWednesday1;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label labelWednesday;
         private Guna.UI.WinForms.GunaGradient2Panel panelThursday;
         private System.Windows.Forms.Label viewThursday5;
         private System.Windows.Forms.Label label35;
@@ -1697,7 +1697,7 @@ namespace ProjectYear
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label viewThursday1;
         private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label labelThursday;
         private Guna.UI.WinForms.GunaGradient2Panel panelFirsday;
         private System.Windows.Forms.Label viewFirsday5;
         private System.Windows.Forms.Label label46;
@@ -1709,7 +1709,7 @@ namespace ProjectYear
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Label viewFirsday1;
         private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label labelFirday;
         private Guna.UI.WinForms.GunaGradient2Panel panelSaturday;
         private System.Windows.Forms.Label viewSaturday5;
         private System.Windows.Forms.Label label57;
@@ -1721,7 +1721,7 @@ namespace ProjectYear
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label viewSaturday1;
         private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label labelSaturday;
         private Guna.UI.WinForms.GunaTextBox editLesson1;
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Label label70;
