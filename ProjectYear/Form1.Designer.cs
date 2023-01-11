@@ -33,6 +33,7 @@ namespace ProjectYear
             this.gunaGradient2Panel1 = new Guna.UI.WinForms.GunaGradient2Panel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaGradient2Panel2 = new Guna.UI.WinForms.GunaGradient2Panel();
+            this.separator = new Guna.UI.WinForms.GunaSeparator();
             this.buttonSaturday = new Guna.UI.WinForms.GunaAdvenceButton();
             this.buttonFirday = new Guna.UI.WinForms.GunaAdvenceButton();
             this.buttonThursday = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -75,7 +76,7 @@ namespace ProjectYear
             this.viewMonday1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.labelMonday = new System.Windows.Forms.Label();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.labelViewGroup = new Guna.UI.WinForms.GunaLabel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panelTuesday = new Guna.UI.WinForms.GunaGradient2Panel();
             this.viewTuesday5 = new System.Windows.Forms.Label();
@@ -137,7 +138,9 @@ namespace ProjectYear
             this.viewSaturday1 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
             this.labelSaturday = new System.Windows.Forms.Label();
-            this.separator = new Guna.UI.WinForms.GunaSeparator();
+            this.gunaGradient2Panel3 = new Guna.UI.WinForms.GunaGradient2Panel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaGradient2Panel1.SuspendLayout();
             this.gunaGradient2Panel2.SuspendLayout();
             this.panelMonday.SuspendLayout();
@@ -147,6 +150,8 @@ namespace ProjectYear
             this.panelThursday.SuspendLayout();
             this.panelFirsday.SuspendLayout();
             this.panelSaturday.SuspendLayout();
+            this.gunaGradient2Panel3.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // gunaGradient2Panel1
@@ -217,6 +222,18 @@ namespace ProjectYear
             this.gunaGradient2Panel2.Radius = 5;
             this.gunaGradient2Panel2.Size = new System.Drawing.Size(425, 691);
             this.gunaGradient2Panel2.TabIndex = 1;
+            // 
+            // separator
+            // 
+            this.separator.CausesValidation = false;
+            this.separator.LineColor = System.Drawing.Color.Black;
+            this.separator.Location = new System.Drawing.Point(19, 57);
+            this.separator.Name = "separator";
+            this.separator.Size = new System.Drawing.Size(52, 10);
+            this.separator.TabIndex = 88;
+            this.separator.Thickness = 4;
+            this.separator.Visible = false;
+            this.separator.LocationChanged += new System.EventHandler(this.separator_LocationChanged);
             // 
             // buttonSaturday
             // 
@@ -432,21 +449,28 @@ namespace ProjectYear
             // 
             this.editChet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
             this.editChet.FormattingEnabled = true;
+            this.editChet.Items.AddRange(new object[] {
+            "Четное",
+            "Нечетное"});
             this.editChet.Location = new System.Drawing.Point(226, 593);
             this.editChet.Name = "editChet";
             this.editChet.Size = new System.Drawing.Size(174, 21);
             this.editChet.TabIndex = 74;
-            this.editChet.Text = "Преподаватель";
+            this.editChet.Text = "Выберите неделю";
             // 
             // editGroup
             // 
             this.editGroup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
             this.editGroup.FormattingEnabled = true;
+            this.editGroup.Items.AddRange(new object[] {
+            "ИСП-20-2",
+            "ССА-20-2"});
             this.editGroup.Location = new System.Drawing.Point(28, 593);
             this.editGroup.Name = "editGroup";
             this.editGroup.Size = new System.Drawing.Size(175, 21);
             this.editGroup.TabIndex = 73;
-            this.editGroup.Text = "ИСП-20-2";
+            this.editGroup.Text = "Выберите группу";
+            this.editGroup.TextChanged += new System.EventHandler(this.editGroup_TextChanged);
             // 
             // editOffise2
             // 
@@ -873,17 +897,17 @@ namespace ProjectYear
             this.labelMonday.TabIndex = 0;
             this.labelMonday.Text = "Понедельник";
             // 
-            // gunaLabel2
+            // labelViewGroup
             // 
-            this.gunaLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.labelViewGroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.gunaLabel2.Location = new System.Drawing.Point(249, 88);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(192, 30);
-            this.gunaLabel2.TabIndex = 3;
-            this.gunaLabel2.Text = "Группа ИСП-20-2";
-            this.gunaLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelViewGroup.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.labelViewGroup.Location = new System.Drawing.Point(249, 88);
+            this.labelViewGroup.Name = "labelViewGroup";
+            this.labelViewGroup.Size = new System.Drawing.Size(192, 30);
+            this.labelViewGroup.TabIndex = 3;
+            this.labelViewGroup.Text = "Группа ИСП-20-2";
+            this.labelViewGroup.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // flowLayoutPanel1
             // 
@@ -1597,25 +1621,69 @@ namespace ProjectYear
             this.labelSaturday.TabIndex = 0;
             this.labelSaturday.Text = "Суббота";
             // 
-            // separator
+            // gunaGradient2Panel3
             // 
-            this.separator.CausesValidation = false;
-            this.separator.LineColor = System.Drawing.Color.Black;
-            this.separator.Location = new System.Drawing.Point(19, 57);
-            this.separator.Name = "separator";
-            this.separator.Size = new System.Drawing.Size(52, 10);
-            this.separator.TabIndex = 88;
-            this.separator.Thickness = 4;
-            this.separator.Visible = false;
-            this.separator.LocationChanged += new System.EventHandler(this.separator_LocationChanged);
+            this.gunaGradient2Panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.gunaGradient2Panel3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaGradient2Panel3.Controls.Add(this.flowLayoutPanel2);
+            this.gunaGradient2Panel3.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(113)))), ((int)(((byte)(213)))));
+            this.gunaGradient2Panel3.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(64)))));
+            this.gunaGradient2Panel3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.gunaGradient2Panel3.Location = new System.Drawing.Point(6, 78);
+            this.gunaGradient2Panel3.Name = "gunaGradient2Panel3";
+            this.gunaGradient2Panel3.Radius = 3;
+            this.gunaGradient2Panel3.Size = new System.Drawing.Size(119, 694);
+            this.gunaGradient2Panel3.TabIndex = 2;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Controls.Add(this.gunaAdvenceButton1);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(6, 10);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(105, 668);
+            this.flowLayoutPanel2.TabIndex = 0;
+            // 
+            // gunaAdvenceButton1
+            // 
+            this.gunaAdvenceButton1.Animated = true;
+            this.gunaAdvenceButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaAdvenceButton1.AnimationSpeed = 0.03F;
+            this.gunaAdvenceButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(88)))), ((int)(((byte)(229)))));
+            this.gunaAdvenceButton1.BorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton1.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.gunaAdvenceButton1.CheckedBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton1.CheckedForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton1.CheckedImage = null;
+            this.gunaAdvenceButton1.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.gunaAdvenceButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaAdvenceButton1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaAdvenceButton1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaAdvenceButton1.ForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton1.Image = null;
+            this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.gunaAdvenceButton1.Location = new System.Drawing.Point(3, 3);
+            this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
+            this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton1.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton1.OnHoverImage = null;
+            this.gunaAdvenceButton1.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.gunaAdvenceButton1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton1.Size = new System.Drawing.Size(102, 44);
+            this.gunaAdvenceButton1.TabIndex = 0;
+            this.gunaAdvenceButton1.Text = "Главная";
+            this.gunaAdvenceButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1034, 781);
+            this.Controls.Add(this.gunaGradient2Panel3);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.gunaLabel2);
+            this.Controls.Add(this.labelViewGroup);
             this.Controls.Add(this.gunaGradient2Panel2);
             this.Controls.Add(this.gunaGradient2Panel1);
             this.MinimumSize = new System.Drawing.Size(1050, 820);
@@ -1639,6 +1707,8 @@ namespace ProjectYear
             this.panelFirsday.PerformLayout();
             this.panelSaturday.ResumeLayout(false);
             this.panelSaturday.PerformLayout();
+            this.gunaGradient2Panel3.ResumeLayout(false);
+            this.flowLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1649,7 +1719,7 @@ namespace ProjectYear
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaGradient2Panel gunaGradient2Panel2;
         private Guna.UI.WinForms.GunaGradient2Panel panelMonday;
-        private Guna.UI.WinForms.GunaLabel gunaLabel2;
+        private Guna.UI.WinForms.GunaLabel labelViewGroup;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label viewMonday5;
         private System.Windows.Forms.Label label11;
@@ -1753,6 +1823,9 @@ namespace ProjectYear
         private Guna.UI.WinForms.GunaAdvenceButton buttonTuesday;
         private Guna.UI.WinForms.GunaAdvenceButton buttonMonday;
         private Guna.UI.WinForms.GunaSeparator separator;
+        private Guna.UI.WinForms.GunaGradient2Panel gunaGradient2Panel3;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton1;
     }
 }
 

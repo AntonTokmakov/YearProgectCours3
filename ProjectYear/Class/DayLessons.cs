@@ -39,14 +39,61 @@ namespace ProjectYear.Class
 
             db.closeConnection();
 
-            for (int i = 0; i < dTable.Rows.Count; i++)
+            updataDayLessonData(dTable);
+        }
+
+        public void editLessonsData(int id, string newLesson,  string newTeacher, string newOffice)
+        {
+            DB db = new DB();
+            DataTable dTable = new DataTable();
+            db.openConnection();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            MySqlCommand command = new MySqlCommand($"UPDATE datalesson SET lesson = '{newLesson}', teacher = '{newTeacher}', office = '{newOffice}' WHERE id = {id}", db.getConnection());
+
+            adapter.SelectCommand = command;
+            adapter.Fill(dTable);
+
+            db.closeConnection();
+
+            updataDayLessonData(dTable);
+        }
+
+        private void updataDayLessonData(DataTable dTable)
+        {
+            int count = dTable.Rows.Count;
+            if (count == 0)
             {
-                var dtRow = dTable.Rows[i];
-                labels[i].Text = dtRow[2].ToString();
-                dayLessons[i] = dtRow[2].ToString();
-                dayTeacher[i] = dtRow[5].ToString();
-                dayOffise[i] = dtRow[6].ToString();
+                for (int i = 0; i < labels.Length; i++)
+                {
+                    labels[i].Text = null;
+                    dayId[i] = null;
+                    dayLessons[i] = null;
+                    dayTeacher[i] = null;
+                    dayOffise[i] = null;
+                }
             }
+            else
+            {
+                for (int i = 0; i < count; i++)
+                {
+                    var dtRow = dTable.Rows[i];
+                    labels[i].Text = dtRow[2].ToString();
+                    dayId[i] = dtRow[0].ToString();
+                    dayLessons[i] = dtRow[2].ToString();
+                    dayTeacher[i] = dtRow[5].ToString();
+                    dayOffise[i] = dtRow[6].ToString();
+                }
+            }
+        }
+
+        public string getDayId(int index)
+        {
+            return dayId[index];
+        }
+
+        public int getDayIdCount()
+        {
+            return dayId.Length;
         }
 
         public void addLabels(Label[] labels)
@@ -59,20 +106,6 @@ namespace ProjectYear.Class
             return labels[index];
         }
 
-        public void editLessonsData(int numberLesson, string group, string lesson, string UpDown, string weekday, string teacher, string office)
-        {
-            /*try
-            {
-
-            }
-            catch (Exception) 
-            { */
-                /*dayLessons[numberLesson] = lesson;
-                dayTeacher[numberLesson] = teacher;
-                dayoffise[numberLesson] = office;*/
-                addDB(numberLesson, group, lesson, UpDown, weekday, teacher, office);
-            //}
-        }
 
         public (string lessons, string teacher, string offise) getLessonsData(int index)
         {

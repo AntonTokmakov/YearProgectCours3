@@ -39,7 +39,6 @@ namespace ProjectYear
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
             Label[] mondayLB = new Label[] { viewMonday1, viewMonday2, viewMonday3, viewMonday4, viewMonday5};
             monday.addLabels(mondayLB);
             monday.fillUpdataDB("ИСП-20-2");
@@ -50,8 +49,19 @@ namespace ProjectYear
 
             Label[] wednesdayLB = new Label[] { viewWednesday1, viewWednesday2, viewWednesday3, viewWednesday4, viewWednesday5 };
             wednesday.addLabels(wednesdayLB);
-            wednesday.fillUpdataDB("ИСП-20-2");     // чтоб добавить дни, надо скопировать эти три строчки и написать свои дни
+            wednesday.fillUpdataDB("ИСП-20-2");
 
+            Label[] thursdayLB = new Label[] { viewThursday1, viewThursday2, viewThursday3, viewThursday4, viewThursday5 };
+            thursday.addLabels(thursdayLB);
+            thursday.fillUpdataDB("ИСП-20-2");
+
+            Label[] firsdayLB = new Label[] { viewFirsday1, viewFirsday2, viewFirsday3, viewFirsday4, viewFirsday5 };
+            firsday.addLabels(firsdayLB);
+            firsday.fillUpdataDB("ИСП-20-2");
+
+            Label[] saturdayLB = new Label[] { viewSaturday1, viewSaturday2, viewSaturday3, viewSaturday4, viewSaturday5 };
+            saturday.addLabels(saturdayLB);
+            saturday.fillUpdataDB("ИСП-20-2");
 
             GunaTextBox[] textBox = new GunaTextBox[5] { editLesson1, editLesson2, editLesson3, editLesson4, editLesson5 };
             editLessonsTBList.addItems(textBox);
@@ -82,21 +92,21 @@ namespace ProjectYear
             {
                 for (int i = 0; i < nowClickDay.getCount(); i++)
                 {
-                    if (editLessonsTBList.getItemTB(i).Equals(nowClickDay.getLessonsData(i).lessons) &&
+                    if (!(editLessonsTBList.getItemTB(i).Equals(nowClickDay.getLessonsData(i).lessons) &&
                         editTicherCBList.getItemCB(i).Equals(nowClickDay.getLessonsData(i).teacher) &&
-                        editOffiseCBList.getItemCB(i).Equals(nowClickDay.getLessonsData(i).offise))
+                        editOffiseCBList.getItemCB(i).Equals(nowClickDay.getLessonsData(i).offise)))
                     {
-
-                    }
-                    else
-                    {
-                        if (true)
+                        if (nowClickDay.getLessonsData(i).lessons == null)
                         {
-
+                            nowClickDay.addDB(i, editGroup.Text, editLessonsTBList.getItemTB(i).Text, editChet.Text, nowClickDay.weekday,
+                                editTicherCBList.getItemCB(i).Text, editOffiseCBList.getItemCB(i).Text);
+                            nowClickDay.fillUpdataDB(editGroup.Text);
                         }
-                        nowClickDay.addDB(i, editGroup.Text, editLessonsTBList.getItemTB(i).Text, editChet.Text, nowClickDay.weekday,
-                            editTicherCBList.getItemCB(i).Text, editOffiseCBList.getItemCB(i).Text);
-                        nowClickDay.fillUpdataDB("ИСП-20-2");
+                        else
+                        {
+                            nowClickDay.editLessonsData(Convert.ToInt32(nowClickDay.getDayId(i)), editLessonsTBList.getItemTB(i).Text, editTicherCBList.getItemCB(i).Text, editOffiseCBList.getItemCB(i).Text);
+                            nowClickDay.fillUpdataDB(editGroup.Text);
+                        }
                     }
                 }
             }
@@ -175,5 +185,16 @@ namespace ProjectYear
         }
         #endregion
 
+        private void editGroup_TextChanged(object sender, EventArgs e)
+        {
+            string group = editGroup.Text;
+            monday.fillUpdataDB(group);
+            tuesday.fillUpdataDB(group);
+            wednesday.fillUpdataDB(group);
+            thursday.fillUpdataDB(group);
+            firsday.fillUpdataDB(group);
+            saturday.fillUpdataDB(group);
+            labelViewGroup.Text = "Группа " + group;
+        }
     }
 }
