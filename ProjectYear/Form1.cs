@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using ProjectYear.Class;
 using Guna.UI.WinForms;
 using MySql.Data.MySqlClient;
+using System.Diagnostics;
 
 namespace ProjectYear
 {
@@ -195,6 +196,21 @@ namespace ProjectYear
             firsday.fillUpdataDB(group);
             saturday.fillUpdataDB(group);
             labelViewGroup.Text = "Группа " + group;
+        }
+
+        private void viewMonday1_MouseEnter(object sender, EventArgs e)
+        {
+            viewMonday1.Text = monday.getLessonsData(0).teacher;
+        }
+
+        private void viewMonday1_MouseLeave(object sender, EventArgs e)
+        {
+            viewMonday1.Text = monday.getLessonsData(0).lessons;
+        }
+
+        private void viewMonday1_Click(object sender, EventArgs e)
+        {
+            Process.Start(new ProcessStartInfo("https://do.sibsiu.ru/day/course/view.php?id=19360"));
         }
     }
 }

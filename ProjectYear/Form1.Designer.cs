@@ -469,7 +469,7 @@ namespace ProjectYear
             this.editGroup.Name = "editGroup";
             this.editGroup.Size = new System.Drawing.Size(175, 21);
             this.editGroup.TabIndex = 73;
-            this.editGroup.Text = "Выберите группу";
+            this.editGroup.Text = "ИСП-20-2";
             this.editGroup.TextChanged += new System.EventHandler(this.editGroup_TextChanged);
             // 
             // editOffise2
@@ -876,6 +876,9 @@ namespace ProjectYear
             this.viewMonday1.TabIndex = 13;
             this.viewMonday1.Text = "Математическое Моделирование 501ГТ";
             this.viewMonday1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.viewMonday1.Click += new System.EventHandler(this.viewMonday1_Click);
+            this.viewMonday1.MouseEnter += new System.EventHandler(this.viewMonday1_MouseEnter);
+            this.viewMonday1.MouseLeave += new System.EventHandler(this.viewMonday1_MouseLeave);
             // 
             // label2
             // 
